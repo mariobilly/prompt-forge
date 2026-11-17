@@ -1,0 +1,4971 @@
+[
+ {
+  "id": "krea-2",
+  "name": "Krea 2",
+  "vendor": "Krea",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "comfyui-open",
+   "krea"
+  ],
+  "docs": [
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Krea's in-house foundation image model (Medium and Large tiers), built for control over aesthetics, style and reference-driven results.",
+  "format": "Natural-language prompt plus optional style/reference images and style strength; no negative-prompt field.",
+  "negative": false
+ },
+ {
+  "id": "krea-2-turbo",
+  "name": "Krea 2 Turbo",
+  "vendor": "Krea",
+  "category": "image",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "krea.ai"
+  ],
+  "summary": "The fastest and cheapest Krea 2 tier, meant for quick illustration and style drafts.",
+  "format": "Short natural-language prompts plus optional style references; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "krea-1",
+  "name": "Krea 1",
+  "vendor": "Krea",
+  "category": "image",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "krea.ai"
+  ],
+  "summary": "Krea's first flagship image model, built to avoid the generic AI look, with sharp textures and LoRA support.",
+  "format": "Natural-language prompt, optionally with trained LoRA/style tokens and style references; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-1-krea",
+  "name": "FLUX.1 Krea",
+  "vendor": "Black Forest Labs / Krea",
+  "category": "image",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "bfl.ai",
+   "krea.ai"
+  ],
+  "summary": "Distilled open-weights version of Krea 1, with better text rendering and anatomy.",
+  "format": "Natural-language prompt in FLUX style; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "krea-realtime",
+  "name": "Krea Realtime",
+  "vendor": "Krea",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "krea.ai"
+  ],
+  "summary": "Live image and video generation that updates as you draw, type, use a webcam or share a screen (models include Flux Realtime Quality and Realtime Video Frame Consistency).",
+  "format": "Short text prompt plus a live canvas, webcam or screen input and an AI-strength slider; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-1-dev-schnell-flux",
+  "name": "FLUX.1 [dev/schnell] (\"Flux\")",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "docs.bfl.ai",
+   "krea.ai"
+  ],
+  "summary": "Fast base FLUX.1 model on Krea, the best choice for LoRA styles.",
+  "format": "Natural-language prompt plus LoRA trigger words; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-1-1-pro",
+  "name": "FLUX 1.1 Pro",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "docs.bfl.ai",
+   "krea.ai"
+  ],
+  "summary": "BFL's efficient pro text-to-image model (marked legacy on Krea).",
+  "format": "Natural-language descriptive prompt; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-1-1-pro-ultra",
+  "name": "FLUX 1.1 Pro Ultra",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "krea"
+  ],
+  "docs": [
+   "docs.bfl.ai",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "BFL's highest-resolution FLUX.1 text-to-image model (marked legacy on Krea).",
+  "format": "Natural-language prompt with an optional raw mode; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-1-kontext-dev",
+  "name": "FLUX.1 Kontext [dev]",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "comfyui-open",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "docs.bfl.ai",
+   "krea.ai",
+   "higgsfield.ai",
+   "bfl.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Instruction-based image editing and style-transfer model.",
+  "format": "Imperative edit instructions about an input image (e.g. 'change the jacket to red, keep the face'); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-1-kontext-pro",
+  "name": "FLUX.1 Kontext Pro",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "krea"
+  ],
+  "docs": [
+   "docs.bfl.ai",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Higher-quality Kontext editing and generation model.",
+  "format": "Imperative edit instructions or a text-to-image prompt, with reference image(s); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-1-kontext-max",
+  "name": "FLUX.1 Kontext Max",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield"
+  ],
+  "docs": [
+   "docs.bfl.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Top Kontext tier, offered on Higgsfield for editing and multi-reference work (the app sometimes shows it as unavailable).",
+  "format": "Imperative edit instructions with reference images; strong typography; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-2-dev",
+  "name": "FLUX.2 [dev]",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "comfyui-open",
+   "krea"
+  ],
+  "docs": [
+   "docs.bfl.ai",
+   "krea.ai",
+   "bfl.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Open-weights FLUX.2, with better realism and crisper text (listed as 'Flux 2' on Krea).",
+  "format": "Natural-language or structured/JSON-style prompt with multi-reference support; hex colours accepted; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-2-pro",
+  "name": "FLUX.2 Pro",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "docs.bfl.ai",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Production FLUX.2 tier with stable, consistent visuals and multi-reference editing.",
+  "format": "Natural-language or structured JSON prompt, up to several reference images, hex colour codes; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-2-flex",
+  "name": "FLUX.2 Flex",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "docs.bfl.ai",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "FLUX.2 variant with adjustable steps and guidance, tuned for text rendering and fine detail.",
+  "format": "Natural-language or structured prompt with guidance and steps controls; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-2-max",
+  "name": "FLUX.2 Max",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "docs.bfl.ai",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "BFL's most capable frontier FLUX.2 model.",
+  "format": "Natural-language or structured prompt with references; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-2-klein",
+  "name": "FLUX.2 Klein",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "comfyui-open",
+   "krea"
+  ],
+  "docs": [
+   "docs.bfl.ai",
+   "krea.ai",
+   "bfl.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Lightweight 4B FLUX.2 for fast generation up to 2K, with reference-image support.",
+  "format": "Concise natural-language prompt plus optional reference images; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-3-video",
+  "name": "Flux 3 Video",
+  "vendor": "Black Forest Labs",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "krea"
+  ],
+  "docs": [
+   "bfl.ai",
+   "krea.ai",
+   "docs.bfl.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "BFL's video model: clips up to 20 s with synchronized sound.",
+  "format": "Natural-language shot description with optional start/end frames and a generate_audio toggle; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-video-edit",
+  "name": "Flux Video Edit",
+  "vendor": "Black Forest Labs",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "krea"
+  ],
+  "docs": [
+   "bfl.ai",
+   "krea.ai",
+   "docs.bfl.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Edits an existing clip from a text instruction.",
+  "format": "Imperative edit instruction plus a source video; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "nano-banana-gemini-2-5-flash-image",
+  "name": "Nano Banana (Gemini 2.5 Flash Image)",
+  "vendor": "Google DeepMind",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Google's versatile conversational image generation and editing model.",
+  "format": "Conversational natural-language prompt or edit instruction with up to several reference images; no negative prompt (state exclusions in words).",
+  "negative": false
+ },
+ {
+  "id": "nano-banana-pro-gemini-3-pro-image",
+  "name": "Nano Banana Pro (Gemini 3 Pro Image)",
+  "vendor": "Google DeepMind",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "deepmind.google",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Google's premium reasoning image model with native 2K/4K output, strong text rendering and precise editing (Higgsfield adds Inpaint).",
+  "format": "Long, detailed natural-language briefs; handles multiple references, exact text in quotes and hex colours; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "nano-banana-2-gemini-3-1-flash-image",
+  "name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
+  "vendor": "Google DeepMind",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "krea.ai",
+   "higgsfield.ai",
+   "deepmind.google",
+   "docs.comfy.org"
+  ],
+  "summary": "Fast flash-tier Google image model with up to 4K output, web-search grounding and up to 14 references.",
+  "format": "Natural-language prompt or edit instruction with multiple references; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "nano-banana-2-lite",
+  "name": "Nano Banana 2 Lite",
+  "vendor": "Google DeepMind",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Low-cost 1K-only Nano Banana tier for quick drafts.",
+  "format": "Natural-language prompt or edit instruction; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "imagen-4-standard-fast-ultra",
+  "name": "Imagen 4 (Standard / Fast / Ultra)",
+  "vendor": "Google DeepMind",
+  "category": "image",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "cloud.google.com",
+   "krea.ai"
+  ],
+  "summary": "Google's photoreal text-to-image family with crisp typography (marked legacy on Krea).",
+  "format": "Descriptive natural-language prompt; Imagen 4 does not take a negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "imagen-3",
+  "name": "Imagen 3",
+  "vendor": "Google DeepMind",
+  "category": "image",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "cloud.google.com",
+   "krea.ai"
+  ],
+  "summary": "Google's previous-generation image model (legacy on Krea).",
+  "format": "Descriptive natural-language prompt; the vendor API takes a negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "gpt-image-1-chatgpt-image",
+  "name": "GPT Image 1 (ChatGPT Image)",
+  "vendor": "OpenAI",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "platform.openai.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "OpenAI's first GPT-4o-based image model: reasoning-driven generation and editing with sharp semi-realistic output.",
+  "format": "Conversational natural-language prompt, reference images and a quality setting; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "gpt-image-1-5-chatgpt-1-5",
+  "name": "GPT Image 1.5 (ChatGPT 1.5)",
+  "vendor": "OpenAI",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "platform.openai.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "OpenAI's precise image model for complex prompts, accurate text and targeted edits.",
+  "format": "Detailed natural-language prompt; put exact text in quotes; supports reference images and edits; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "gpt-image-2-chatgpt-2-gpt-img-2",
+  "name": "GPT Image 2 (ChatGPT 2 / GPT-IMG-2)",
+  "vendor": "OpenAI",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "platform.openai.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "OpenAI's next-generation image model: state-of-the-art photorealism, near-perfect text and native 4K.",
+  "format": "Natural-language brief with quoted text and reference images; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "gpt-image-2-5-flare",
+  "name": "GPT Image 2.5 Flare",
+  "vendor": "OpenAI",
+  "category": "image",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "platform.openai.com",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Default GPT Image 2.5 variant: faster than GPT Image 2, higher quality, with transparent-background support.",
+  "format": "Natural-language prompt with quality and background (transparent) options and reference images; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "gpt-image-2-5-sunburst",
+  "name": "GPT Image 2.5 Sunburst",
+  "vendor": "OpenAI",
+  "category": "image",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "platform.openai.com",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "GPT Image 2.5 variant tuned for precise edits and subject preservation (Krea describes it as speed-optimized).",
+  "format": "Edit instructions or a natural-language prompt with reference images; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "seedream-4-0",
+  "name": "Seedream 4.0",
+  "vendor": "ByteDance",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "docs.byteplus.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "ByteDance's unified generation and editing model with flexible resolution up to 4K and multi-image input.",
+  "format": "Natural-language prompt or edit instruction with up to several references; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "seedream-4-5",
+  "name": "Seedream 4.5",
+  "vendor": "ByteDance",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "docs.byteplus.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "4K Seedream tuned for vibrant photorealism and better typography.",
+  "format": "Natural-language prompt with multi-reference editing; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "seedream-5-0-lite",
+  "name": "Seedream 5.0 Lite",
+  "vendor": "ByteDance",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "docs.byteplus.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Lightweight Seedream 5 with deep thinking, web search and up to 14 style images.",
+  "format": "Natural-language prompt; the model reasons over and expands it; style/reference images; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "seedream-5-0-pro",
+  "name": "Seedream 5.0 Pro",
+  "vendor": "ByteDance",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "docs.byteplus.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "ByteDance's flagship image model: precise infographics, point-level/interactive editing, layer separation, multilingual text and colour control.",
+  "format": "Detailed natural-language prompt with exact text in quotes, references and edit instructions; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "seedream-5-0-flash",
+  "name": "Seedream 5.0 Flash",
+  "vendor": "ByteDance",
+  "category": "image",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "higgsfield.ai"
+  ],
+  "summary": "Fast Seedream 5 model with visual reasoning, multi-reference style blending and editing.",
+  "format": "Natural-language prompt or edit instruction with multiple references; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "seededit-3-0",
+  "name": "SeedEdit 3.0",
+  "vendor": "ByteDance",
+  "category": "image",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "krea.ai"
+  ],
+  "summary": "ByteDance's instruction-based image editing model (available through the Krea API).",
+  "format": "Imperative edit instruction plus an input image; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "higgsfield-soul-1-0",
+  "name": "Higgsfield Soul (1.0)",
+  "vendor": "Higgsfield",
+  "category": "image",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "higgsfield.ai"
+  ],
+  "summary": "Higgsfield's original fashion/UGC-grade photoreal image model with style presets and Soul ID characters.",
+  "format": "Short natural-language prompt plus a style preset, optional Soul ID character and strength controls; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "higgsfield-soul-2-0",
+  "name": "Higgsfield Soul 2.0",
+  "vendor": "Higgsfield",
+  "category": "image",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "higgsfield.ai"
+  ],
+  "summary": "Higgsfield's second-generation foundation image model for characters and editorial/fashion looks, with moodboards, Soul ID, Soul HEX colour control and Inpaint.",
+  "format": "Natural-language prompt plus preset/moodboard, optional Soul ID character, HEX palette and image reference; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "higgsfield-soul-cinema-1-5",
+  "name": "Higgsfield Soul Cinema (1.5)",
+  "vendor": "Higgsfield",
+  "category": "image",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "higgsfield.ai"
+  ],
+  "summary": "Cinematic still-image model for film-frame looks, with Soul Cast actors and Soul Locations.",
+  "format": "Cinematographic natural-language prompt (shot, lens, lighting, mood) plus cast/location elements and presets; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "higgsfield-popcorn",
+  "name": "Higgsfield Popcorn",
+  "vendor": "Higgsfield",
+  "category": "image",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "higgsfield.ai"
+  ],
+  "summary": "Storyboard/sequence image generator that keeps characters and scenes consistent across frames.",
+  "format": "Per-frame natural-language scene descriptions plus reference images for characters and settings; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "kling-o1-image",
+  "name": "Kling O1 Image",
+  "vendor": "Kuaishou",
+  "category": "image",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "klingai.com",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Kling's Omni image model for complex multi-reference compositions (up to 10 tagged references).",
+  "format": "Natural-language prompt that names tagged references (e.g. @image1); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "grok-imagine-2-0-image",
+  "name": "Grok Imagine 2.0 (Image)",
+  "vendor": "xAI",
+  "category": "image",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "docs.x.ai",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "xAI's image model with selectable quality and 2K output.",
+  "format": "Natural-language prompt with quality/resolution settings and optional style images; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "ideogram-3-0",
+  "name": "Ideogram 3.0",
+  "vendor": "Ideogram",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "krea"
+  ],
+  "docs": [
+   "developer.ideogram.ai",
+   "krea.ai",
+   "docs.ideogram.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Aesthetic general-purpose model that excels at flat, graphic and typographic design.",
+  "format": "Natural-language prompt with exact text in quotes and style/magic-prompt options; the vendor API takes a negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "ideogram-4-0",
+  "name": "Ideogram 4.0",
+  "vendor": "Ideogram",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "comfyui-open",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "developer.ideogram.ai",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.ideogram.ai",
+   "docs.comfy.org",
+   "ideogram.ai"
+  ],
+  "summary": "Ideogram's latest model, focused on design layouts and text rendering (on Higgsfield through the API).",
+  "format": "Natural-language prompt with quoted text; the vendor API supports a negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "ideogram-2-0a-turbo",
+  "name": "Ideogram 2.0a Turbo",
+  "vendor": "Ideogram",
+  "category": "image",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "developer.ideogram.ai",
+   "krea.ai"
+  ],
+  "summary": "Older fast Ideogram model, still listed in the Krea API.",
+  "format": "Natural-language prompt with quoted text; negative prompt supported by the vendor.",
+  "negative": true
+ },
+ {
+  "id": "qwen-image-qwen",
+  "name": "Qwen-Image (\"Qwen\")",
+  "vendor": "Alibaba (Qwen)",
+  "category": "image",
+  "platforms": [
+   "comfyui-open",
+   "krea"
+  ],
+  "docs": [
+   "qwen.ai",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Semi-realistic open model with strong text rendering and adherence to long prompts.",
+  "format": "Long, detailed natural-language prompts (English/Chinese text in quotes); negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "qwen-image-2512",
+  "name": "Qwen-Image 2512",
+  "vendor": "Alibaba (Qwen)",
+  "category": "image",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "qwen.ai",
+   "krea.ai"
+  ],
+  "summary": "Updated Qwen-Image with better human realism, natural detail and text layout.",
+  "format": "Detailed natural-language prompt; negative_prompt is supported.",
+  "negative": true
+ },
+ {
+  "id": "qwen-image-2-1",
+  "name": "Qwen Image 2.1",
+  "vendor": "Alibaba (Qwen)",
+  "category": "image",
+  "platforms": [
+   "comfyui-open",
+   "krea"
+  ],
+  "docs": [
+   "qwen.ai",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Qwen image model for transparent assets and identity-safe edits.",
+  "format": "Natural-language prompt with optional background (transparent) setting and style images.",
+  "negative": false
+ },
+ {
+  "id": "qwen-image-3",
+  "name": "Qwen Image 3",
+  "vendor": "Alibaba (Qwen)",
+  "category": "image",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "qwen.ai",
+   "krea.ai"
+  ],
+  "summary": "Qwen model for dense layouts with small, legible text (on Higgsfield through the API).",
+  "format": "Detailed layout-oriented natural-language prompt with quoted text, seed and style images.",
+  "negative": false
+ },
+ {
+  "id": "z-image-turbo",
+  "name": "Z-Image (Turbo)",
+  "vendor": "Alibaba Tongyi-MAI",
+  "category": "image",
+  "platforms": [
+   "comfyui-open",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "github.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "tongyi-mai.github.io",
+   "docs.comfy.org"
+  ],
+  "summary": "Cheap, very fast distilled photoreal model for drafts.",
+  "format": "Natural-language prompt (bilingual text OK); runs at CFG ~1, so negative prompts have no practical effect.",
+  "negative": true
+ },
+ {
+  "id": "wan-2-2-image",
+  "name": "Wan 2.2 (Image)",
+  "vendor": "Alibaba (Wan)",
+  "category": "image",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "wan.video",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Wan 2.2 used as a text-to-image model: cinematic look, crisp textures, realistic colour.",
+  "format": "Cinematic natural-language prompt; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "recraft-v4",
+  "name": "Recraft V4",
+  "vendor": "Recraft",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "krea"
+  ],
+  "docs": [
+   "recraft.ai",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Sharp, design-grade images with Standard and Pro modes.",
+  "format": "Natural-language prompt plus style selection; no negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "recraft-v4-1",
+  "name": "Recraft V4.1",
+  "vendor": "Recraft",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield"
+  ],
+  "docs": [
+   "recraft.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Design-grade raster and editable SVG vector output for logos, icons and brand assets.",
+  "format": "Natural-language prompt with raster/vector output choice and brand colours; no negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "recraft-v4-styles-utility",
+  "name": "Recraft V4 Styles / Utility",
+  "vendor": "Recraft",
+  "category": "image",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "recraft.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Recraft V4 variants: Styles for reference-based style transfer, Utility for mockups and product shots.",
+  "format": "Natural-language prompt plus up to N style reference images (Styles) or a product image (Utility); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "runway-gen-4-image",
+  "name": "Runway Gen-4 Image",
+  "vendor": "Runway",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "krea"
+  ],
+  "docs": [
+   "docs.dev.runwayml.com",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Cinematic image model with references; good at combining several characters in one frame.",
+  "format": "Natural-language prompt that uses @tags for reference images; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "luma-uni-1",
+  "name": "Luma UNI-1",
+  "vendor": "Luma AI",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "krea"
+  ],
+  "docs": [
+   "docs.lumalabs.ai",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Luma's reasoning image model for prompt-faithful text-to-image.",
+  "format": "Natural-language prompt with mode and output-format options; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "muse-image",
+  "name": "Muse Image",
+  "vendor": "Meta",
+  "category": "image",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "ai.meta.com",
+   "krea.ai"
+  ],
+  "summary": "Meta's agentic image model: it reasons about the prompt, pulls web references and checks the render before returning it.",
+  "format": "Plain natural-language request (can reference real-world subjects) plus optional style images; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "veo-2",
+  "name": "Veo 2",
+  "vendor": "Google DeepMind",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "krea.ai"
+  ],
+  "summary": "Google's earlier silent video model (legacy on Krea).",
+  "format": "Cinematic natural-language prompt with an optional start image; the vendor API supports a negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "veo-3",
+  "name": "Veo 3",
+  "vendor": "Google DeepMind",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "cloud.google.com",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Google video model with synchronized native audio (dialogue, SFX, ambience).",
+  "format": "Natural-language shot description; dialogue in quotes with speaker cues, SFX/ambience described inline; the vendor API supports a negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "veo-3-fast",
+  "name": "Veo 3 Fast",
+  "vendor": "Google DeepMind",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "krea.ai"
+  ],
+  "summary": "Faster, cheaper Veo 3 with audio.",
+  "format": "Same as Veo 3: natural-language prompt plus quoted dialogue and audio cues; negative prompt supported by the vendor.",
+  "negative": true
+ },
+ {
+  "id": "veo-3-1",
+  "name": "Veo 3.1",
+  "vendor": "Google DeepMind",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "deepmind.google",
+   "krea.ai",
+   "higgsfield.ai",
+   "cloud.google.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Google's top video model: native audio, reference images, first/last frame and up to 4K on Higgsfield.",
+  "format": "Structured cinematic prompt (subject, action, camera, style) with quoted dialogue and sound cues, plus 'ingredients' reference images and start/end frames; the vendor API supports a negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "veo-3-1-fast",
+  "name": "Veo 3.1 Fast",
+  "vendor": "Google DeepMind",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Faster, cheaper Veo 3.1 with audio.",
+  "format": "Same prompting as Veo 3.1; negative prompt supported by the vendor API.",
+  "negative": true
+ },
+ {
+  "id": "veo-3-1-lite",
+  "name": "Veo 3.1 Lite",
+  "vendor": "Google DeepMind",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Budget Veo 3.1 tier: 720p/1080p with native audio, 8 s clips.",
+  "format": "Natural-language prompt with audio cues and optional first/last frame (8 s only).",
+  "negative": false
+ },
+ {
+  "id": "gemini-omni-flash",
+  "name": "Gemini Omni Flash",
+  "vendor": "Google DeepMind",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "krea.ai",
+   "higgsfield.ai",
+   "deepmind.google",
+   "docs.comfy.org"
+  ],
+  "summary": "Google's multimodal video model that composes coherent scenes from text, images and video, with native audio and consistent characters (also powers Higgsfield Shorts Studio).",
+  "format": "Natural-language scene prompt plus reference images/videos and a start image; audio described in the prompt; conversational edit-by-talking; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "gemini-omni-flash-1-1",
+  "name": "Gemini Omni Flash 1.1",
+  "vendor": "Google DeepMind",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Updated Omni Flash with first/last-frame control, 360p draft mode, up to 4K, and edit/extend.",
+  "format": "Natural-language prompt with reference images/videos and first/last frames; native audio; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "sora-2",
+  "name": "Sora 2",
+  "vendor": "OpenAI",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "platform.openai.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "OpenAI video model with strong world simulation and physics, plus synchronized audio.",
+  "format": "Screenplay-style natural-language prompt (shot, action, dialogue lines, sound) and an optional start image; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "sora-2-pro",
+  "name": "Sora 2 Pro",
+  "vendor": "OpenAI",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "platform.openai.com",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Higher-fidelity Sora 2 tier (Higgsfield also lists Pro Max and a Sora 2 upscale/enhancer).",
+  "format": "Same screenplay-style prompting as Sora 2, with dialogue and audio cues; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "kling-1-0-2-1-legacy",
+  "name": "Kling 1.0-2.1 (legacy)",
+  "vendor": "Kuaishou",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "klingai.com",
+   "krea.ai"
+  ],
+  "summary": "Older Kling video models (1.0 Pro, 1.6, 2.0, 2.1) kept as legacy options on Krea.",
+  "format": "Natural-language prompt with image-to-video and cfg control; negative prompt supported by the vendor API.",
+  "negative": true
+ },
+ {
+  "id": "kling-2-5-turbo",
+  "name": "Kling 2.5 Turbo",
+  "vendor": "Kuaishou",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "klingai.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Fast, cost-efficient Kling with improved motion and prompt adherence (also listed on Krea as 'Kling 2.5').",
+  "format": "Natural-language prompt with camera/motion wording, image-to-video and start/end frames; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "kling-2-6",
+  "name": "Kling 2.6",
+  "vendor": "Kuaishou",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "klingai.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Kling model with native audio for stable, consistent character animation.",
+  "format": "Natural-language prompt with quoted dialogue and sound cues, audio toggle; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "kling-3-0",
+  "name": "Kling 3.0",
+  "vendor": "Kuaishou",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "klingai.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Kling's frontier model with native audio, multi-shot storyboarding, element consistency, clips up to 15 s and up to 4K on Higgsfield.",
+  "format": "Natural-language or per-shot multi-shot prompts with quoted dialogue, audio toggle and elements/start/end frames; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "kling-3-0-turbo",
+  "name": "Kling 3.0 Turbo",
+  "vendor": "Kuaishou",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "klingai.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Much faster Kling 3.0 for drafting (text- and image-to-video, up to 15 s).",
+  "format": "Same prompting as Kling 3.0; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "kling-o1-omni-video",
+  "name": "Kling O1 (Omni Video)",
+  "vendor": "Kuaishou",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "klingai.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Kling's unified reasoning video model for generation and editing, with image/element/video references.",
+  "format": "Natural-language prompt that refers to tagged references (@image, @element, @video) or gives edit instructions.",
+  "negative": false
+ },
+ {
+  "id": "kling-o3-kling-3-0-omni",
+  "name": "Kling O3 (Kling 3.0 Omni)",
+  "vendor": "Kuaishou",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "klingai.com",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Advanced reasoning Omni video model (720p, or 1080p as Pro) with Reference and Edit modes and first/last frame.",
+  "format": "Natural-language prompt with tagged image/element/video references; Edit mode takes text edit instructions; Reference mode copies camera/motion from a clip.",
+  "negative": false
+ },
+ {
+  "id": "kling-motion-control-v2-6-v3",
+  "name": "Kling Motion Control (v2.6 / v3)",
+  "vendor": "Kuaishou",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "klingai.com",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Transfers motion from a reference video onto a character image.",
+  "format": "Character image plus driving video, with an optional text prompt for scene and background details.",
+  "negative": false
+ },
+ {
+  "id": "kling-avatars-2-0-kling-lipsync",
+  "name": "Kling Avatars 2.0 / Kling Lipsync",
+  "vendor": "Kuaishou",
+  "category": "video",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "klingai.com",
+   "higgsfield.ai"
+  ],
+  "summary": "Kling talking-avatar and lip-sync models for realistic speaking videos.",
+  "format": "Avatar image plus audio or script text, with an optional prompt for expression/motion; presets available.",
+  "negative": false
+ },
+ {
+  "id": "seedance-1-0-lite",
+  "name": "Seedance 1.0 Lite",
+  "vendor": "ByteDance",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "krea.ai"
+  ],
+  "summary": "Early lightweight Seedance model (legacy on Krea).",
+  "format": "Natural-language prompt with camera wording; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "seedance-1-0-pro",
+  "name": "Seedance 1.0 Pro",
+  "vendor": "ByteDance",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "docs.byteplus.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "ByteDance's first Pro video model, with multi-shot storytelling and strong motion.",
+  "format": "Natural-language prompt; supports multi-shot phrasing and camera terms; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "seedance-1-0-pro-fast",
+  "name": "Seedance 1.0 Pro Fast",
+  "vendor": "ByteDance",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Fast, cheap Seedance Pro (up to 12 s).",
+  "format": "Natural-language prompt; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "seedance-1-5-pro",
+  "name": "Seedance 1.5 Pro",
+  "vendor": "ByteDance",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "docs.byteplus.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Seedance with joint audio-video generation and lip-synced dialogue.",
+  "format": "Natural-language prompt with quoted dialogue and sound descriptions, audio toggle; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "seedance-2-0",
+  "name": "Seedance 2.0",
+  "vendor": "ByteDance",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "docs.byteplus.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "ByteDance's flagship native audio-video model: multi-shot, tagged image/video/audio references, frame animation, up to 4K on Higgsfield.",
+  "format": "Cinematographic natural-language prompt (camera, subject, action, setting, style, lighting), with @-tagged references, quoted dialogue and audio cues; no negative prompt, and content filters are strict.",
+  "negative": false
+ },
+ {
+  "id": "seedance-2-0-fast",
+  "name": "Seedance 2.0 Fast",
+  "vendor": "ByteDance",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Faster, cheaper Seedance 2.0 with the same audio, references and frame animation.",
+  "format": "Same prompting as Seedance 2.0; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "seedance-2-0-mini",
+  "name": "Seedance 2.0 Mini",
+  "vendor": "ByteDance",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Lighter Seedance 2 that runs about twice as fast (480p/720p, 4–15 s, text/image/video/audio references).",
+  "format": "Same prompting as Seedance 2.0; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "seedance-2-5",
+  "name": "Seedance 2.5",
+  "vendor": "ByteDance",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "docs.byteplus.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "The most advanced Seedance: 30 s clips, native audio, up to 50 references, 1080p, with draft/edit/extend modes.",
+  "format": "Cinematic natural-language or multi-shot prompts with @-tagged references, dialogue and audio cues (Krea adds prompt enhancement); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "hailuo-t2v-01-i2v-01-live-legacy",
+  "name": "Hailuo T2V-01 / I2V-01-Live (legacy)",
+  "vendor": "MiniMax",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "platform.minimax.io",
+   "krea.ai"
+  ],
+  "summary": "MiniMax's first Hailuo video models; 01-Live specializes in animating 2D/illustrated images.",
+  "format": "Natural-language prompt, optionally with [camera] bracket commands; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "hailuo-02",
+  "name": "Hailuo 02",
+  "vendor": "MiniMax",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "platform.minimax.io",
+   "hailuoai.video",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "MiniMax's 1080p model with strong physics and dynamic motion.",
+  "format": "Natural-language prompt with optional [Pan left]-style camera commands; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "hailuo-2-3",
+  "name": "Hailuo 2.3",
+  "vendor": "MiniMax",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "platform.minimax.io",
+   "hailuoai.video",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Hailuo model with dynamic motion, expressive faces and cinematic presets.",
+  "format": "Natural-language prompt with bracketed camera-movement commands; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "hailuo-2-3-fast",
+  "name": "Hailuo 2.3 Fast",
+  "vendor": "MiniMax",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "platform.minimax.io",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Cheapest mid-quality Hailuo image-to-video tier.",
+  "format": "Same prompting as Hailuo 2.3; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "minimax-h3",
+  "name": "MiniMax H3",
+  "vendor": "MiniMax",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "comfyui-open",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "platform.minimax.io",
+   "krea.ai",
+   "higgsfield.ai",
+   "minimax.io",
+   "docs.comfy.org"
+  ],
+  "summary": "MiniMax's frontier 2K video model with keyframes and multimodal image/video/audio references.",
+  "format": "Natural-language prompt plus reference images/videos/audio and start/end frames; no negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "minimax-h3-max",
+  "name": "MiniMax H3 Max",
+  "vendor": "MiniMax",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "platform.minimax.io",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Post-trained H3 with stronger prompt adherence and aesthetics, plus camera control.",
+  "format": "Natural-language prompt with image/video/audio references and camera settings; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "minimax-h3-max-turbo",
+  "name": "MiniMax H3 Max Turbo",
+  "vendor": "MiniMax",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "platform.minimax.io",
+   "krea.ai"
+  ],
+  "summary": "Faster, cheaper H3 Max at 480p/768p/1080p, up to 15 s.",
+  "format": "Same prompting as H3 Max; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "wan-2-1",
+  "name": "Wan 2.1",
+  "vendor": "Alibaba (Wan)",
+  "category": "video",
+  "platforms": [
+   "comfyui-open",
+   "krea"
+  ],
+  "docs": [
+   "wan.video",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Fast open Wan model with LoRA support and first/last-frame variants.",
+  "format": "Natural-language prompt (English/Chinese), LoRA triggers; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "wan-2-2",
+  "name": "Wan 2.2",
+  "vendor": "Alibaba (Wan)",
+  "category": "video",
+  "platforms": [
+   "comfyui-open",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "wan.video",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Open MoE video model with cinematic aesthetic controls.",
+  "format": "Cinematic natural-language prompt with lighting/composition terms; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "wan-2-2-animate",
+  "name": "Wan 2.2 Animate",
+  "vendor": "Alibaba (Wan)",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "wan.video",
+   "krea.ai"
+  ],
+  "summary": "Character animation and replacement driven by a reference video (Move and Replace modes).",
+  "format": "Character image plus driving video, with an optional short prompt.",
+  "negative": false
+ },
+ {
+  "id": "wan-2-5",
+  "name": "Wan 2.5",
+  "vendor": "Alibaba (Wan)",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "wan.video",
+   "alibabacloud.com",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Wan with native audio/lip-sync and 1080p output.",
+  "format": "Natural-language prompt with dialogue/audio cues or an uploaded audio track; negative prompt supported; prompt expansion optional.",
+  "negative": true
+ },
+ {
+  "id": "wan-2-5-speak-wan-2-2-speak",
+  "name": "Wan 2.5 Speak / Wan 2.2 Speak",
+  "vendor": "Alibaba (Wan) / Higgsfield",
+  "category": "video",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "wan.video",
+   "higgsfield.ai"
+  ],
+  "summary": "Talking-avatar lip-sync built on Wan, for speaking videos from an image.",
+  "format": "Portrait image plus script text or audio, with an optional scene/emotion prompt.",
+  "negative": false
+ },
+ {
+  "id": "wan-2-6",
+  "name": "Wan 2.6",
+  "vendor": "Alibaba (Wan)",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "wan.video",
+   "alibabacloud.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Wan with multi-shot storytelling and native audio.",
+  "format": "Natural-language or multi-shot prompts with audio cues; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "wan-2-7",
+  "name": "Wan 2.7",
+  "vendor": "Alibaba (Wan)",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield"
+  ],
+  "docs": [
+   "wan.video",
+   "higgsfield.ai",
+   "alibabacloud.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Balances generation speed and visual richness; audio-capable.",
+  "format": "Natural-language prompt with audio cues; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "wan-3-0",
+  "name": "Wan 3.0",
+  "vendor": "Alibaba (Wan)",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "wan.video",
+   "alibabacloud.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Latest Wan: 30 s 1080p clips, native audio and image/video/audio references.",
+  "format": "Natural-language prompt with references, audio toggle and optional prompt expansion; negative prompt supported by the vendor.",
+  "negative": true
+ },
+ {
+  "id": "wan-3-0-prime",
+  "name": "Wan 3.0 Prime",
+  "vendor": "Alibaba (Wan)",
+  "category": "video",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "wan.video",
+   "higgsfield.ai"
+  ],
+  "summary": "Faster, premium-priced Wan 3.0 tier.",
+  "format": "Same prompting as Wan 3.0.",
+  "negative": true
+ },
+ {
+  "id": "happyhorse",
+  "name": "HappyHorse",
+  "vendor": "Alibaba",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "alibabacloud.com",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Alibaba's top-ranked video+audio model (720p/1080p) with reference-guided generation.",
+  "format": "Natural-language prompt with image references and native audio cues; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "grok-imagine-video",
+  "name": "Grok Imagine (Video)",
+  "vendor": "xAI",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "docs.x.ai",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "xAI's fast video generation model with synchronized audio.",
+  "format": "Natural-language prompt, optionally with a start image; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "grok-imagine-1-5-grok-video-1-5",
+  "name": "Grok Imagine 1.5 (Grok Video 1.5)",
+  "vendor": "xAI",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "docs.x.ai",
+   "krea.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Text/image-to-video (plus reference-to-video) with native audio, keeping source composition.",
+  "format": "Natural-language prompt plus an optional start image or references; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "ltx-2",
+  "name": "LTX-2",
+  "vendor": "Lightricks",
+  "category": "video",
+  "platforms": [
+   "comfyui-open",
+   "krea"
+  ],
+  "docs": [
+   "docs.ltx.video",
+   "krea.ai",
+   "ltx.video",
+   "docs.comfy.org"
+  ],
+  "summary": "Affordable open audio-video model.",
+  "format": "Long, detailed chronological natural-language prompt with an audio toggle; negative prompt supported by the model.",
+  "negative": true
+ },
+ {
+  "id": "ltx-2-3-22b",
+  "name": "LTX-2.3 (22B)",
+  "vendor": "Lightricks",
+  "category": "video",
+  "platforms": [
+   "comfyui-open",
+   "krea"
+  ],
+  "docs": [
+   "docs.ltx.video",
+   "krea.ai",
+   "ltx.video",
+   "docs.comfy.org"
+  ],
+  "summary": "Higher-quality 22B LTX audio-video model.",
+  "format": "Detailed chronological natural-language prompt with audio generation; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "ltx-2-5-pro",
+  "name": "LTX-2.5 Pro",
+  "vendor": "Lightricks",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "docs.ltx.video",
+   "krea.ai"
+  ],
+  "summary": "Quality-optimized LTX audio-video model (on Higgsfield through the API).",
+  "format": "Natural-language prompt with camera_motion, start/end frames and generate_audio; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "ltx-2-5-fast",
+  "name": "LTX-2.5 Fast",
+  "vendor": "Lightricks",
+  "category": "video",
+  "platforms": [
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "docs.ltx.video",
+   "krea.ai"
+  ],
+  "summary": "Speed-optimized LTX: 20 s clips up to 4K (on Higgsfield through the API).",
+  "format": "Same prompting as LTX-2.5 Pro.",
+  "negative": true
+ },
+ {
+  "id": "pixverse-v6",
+  "name": "PixVerse V6",
+  "vendor": "PixVerse",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield"
+  ],
+  "docs": [
+   "docs.platform.pixverse.ai",
+   "platform.pixverse.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "PixVerse's latest text-to-video model (Higgsfield API).",
+  "format": "Natural-language prompt with style/effects options; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "vidu-q2",
+  "name": "Vidu Q2",
+  "vendor": "Shengshu",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "krea"
+  ],
+  "docs": [
+   "platform.vidu.com",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Vidu model with strong reference-to-video and expressive motion.",
+  "format": "Natural-language prompt with a movement_amplitude setting and reference images; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "vidu-q3",
+  "name": "Vidu Q3",
+  "vendor": "Shengshu",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "krea"
+  ],
+  "docs": [
+   "platform.vidu.com",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Newer Vidu, strongest at anime, with audio generation.",
+  "format": "Natural-language prompt with movement amplitude, seed and a generate_audio toggle; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "luma-ray-2",
+  "name": "Luma Ray 2",
+  "vendor": "Luma AI",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "krea"
+  ],
+  "docs": [
+   "docs.lumalabs.ai",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Luma's realistic-motion video model (legacy on Krea; also Ray 2 Reframe).",
+  "format": "Natural-language prompt with optional start/end keyframes and camera-motion wording; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "luma-ray-3-2",
+  "name": "Luma Ray 3.2",
+  "vendor": "Luma AI",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "krea"
+  ],
+  "docs": [
+   "docs.lumalabs.ai",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Newer Luma Ray video model listed in Krea's pricing table.",
+  "format": "Natural-language prompt with keyframes; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "luma-video-restyle-modify",
+  "name": "Luma Video Restyle (Modify)",
+  "vendor": "Luma AI",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "docs.lumalabs.ai",
+   "krea.ai"
+  ],
+  "summary": "Luma's video-to-video restyling model in Krea's Video Restyle tool.",
+  "format": "Source video plus a text/style prompt (optional reference frame) and a strength setting.",
+  "negative": false
+ },
+ {
+  "id": "runway-gen-3",
+  "name": "Runway Gen-3",
+  "vendor": "Runway",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "docs.dev.runwayml.com",
+   "krea.ai"
+  ],
+  "summary": "Runway's earlier video model (legacy on Krea).",
+  "format": "Natural-language prompt with a start image and camera terms; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "runway-gen-4-video",
+  "name": "Runway Gen-4 (Video)",
+  "vendor": "Runway",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "docs.dev.runwayml.com",
+   "krea.ai"
+  ],
+  "summary": "Runway image-to-video with character and scene consistency (legacy on Krea).",
+  "format": "Motion-focused natural-language prompt with an input image; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "runway-gen-4-5",
+  "name": "Runway Gen-4.5",
+  "vendor": "Runway",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "docs.dev.runwayml.com",
+   "krea.ai"
+  ],
+  "summary": "Runway's frontier model with native text-to-video.",
+  "format": "Natural-language shot description (subject, motion, camera); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "hunyuan-video",
+  "name": "Hunyuan Video",
+  "vendor": "Tencent",
+  "category": "video",
+  "platforms": [
+   "comfyui-open",
+   "krea"
+  ],
+  "docs": [
+   "hunyuan.tencent.com",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Tencent's open video model (legacy on Krea).",
+  "format": "Natural-language prompt; negative prompt supported by the model.",
+  "negative": true
+ },
+ {
+  "id": "higgsfield-dop",
+  "name": "Higgsfield DoP",
+  "vendor": "Higgsfield",
+  "category": "video",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "higgsfield.ai"
+  ],
+  "summary": "Higgsfield's original image-to-video 'world model' that simulates a real camera in 3D space, with 100+ camera-motion presets.",
+  "format": "Start image plus a short action prompt and a chosen camera/VFX motion preset (camera moves are not written in the prompt); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "higgsfield-cinema-studio-4-0",
+  "name": "Higgsfield Cinema Studio 4.0",
+  "vendor": "Higgsfield",
+  "category": "video",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "higgsfield.ai"
+  ],
+  "summary": "Higgsfield's cinematic image+video workspace (Seedance and other engines per shot): 30 s generations, 50 references, optical stack, Emotion Wheel, genres/eras, colour grading, AI Cast.",
+  "format": "Per-shot natural-language scene prompts plus UI-selected camera body, lens, focal length, up to 3 stacked camera moves, genre/era, emotions and @Elements (characters, locations, props); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "higgsfield-genjutsu",
+  "name": "Higgsfield Genjutsu",
+  "vendor": "Higgsfield",
+  "category": "video",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "higgsfield.ai"
+  ],
+  "summary": "Video tool for Motion Transfer and Object Swap: change one element of a clip and leave the rest untouched (30+ presets).",
+  "format": "Source video plus a reference image and/or a text description of the swap, or a preset.",
+  "negative": false
+ },
+ {
+  "id": "higgsfield-speak-2-0",
+  "name": "Higgsfield Speak 2.0",
+  "vendor": "Higgsfield",
+  "category": "video",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "higgsfield.ai"
+  ],
+  "summary": "Talking-avatar video generator with speech in 50+ languages (up to ~2 min).",
+  "format": "Avatar image plus script text (or audio), voice selection and a scene/emotion preset prompt.",
+  "negative": false
+ },
+ {
+  "id": "infinitetalk",
+  "name": "InfiniteTalk",
+  "vendor": "MeiGen-AI",
+  "category": "video",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "github.com",
+   "higgsfield.ai"
+  ],
+  "summary": "Long-form talking-head generation from a single avatar and audio.",
+  "format": "Avatar image plus audio/script, with an optional short prompt describing expression and scene; presets on Higgsfield.",
+  "negative": false
+ },
+ {
+  "id": "sync-lipsync-3",
+  "name": "Sync Lipsync 3",
+  "vendor": "Sync Labs",
+  "category": "video",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "docs.sync.so",
+   "higgsfield.ai"
+  ],
+  "summary": "Lip-sync model that redubs an existing video to new audio.",
+  "format": "Video plus target audio (or TTS script); no creative text prompt.",
+  "negative": false
+ },
+ {
+  "id": "hedra-character-3",
+  "name": "Hedra (Character-3)",
+  "vendor": "Hedra",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "hedra.com",
+   "krea.ai"
+  ],
+  "summary": "Omnimodal lip-sync/talking-character model in Krea's Lipsync tool.",
+  "format": "Character image plus audio or script, with an optional text prompt for expression/motion.",
+  "negative": false
+ },
+ {
+  "id": "veed-fabric-fast",
+  "name": "VEED Fabric (Fast)",
+  "vendor": "VEED",
+  "category": "video",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "veed.io",
+   "krea.ai"
+  ],
+  "summary": "Turns any image into a talking video, fast.",
+  "format": "Image plus audio or script text; minimal prompting.",
+  "negative": false
+ },
+ {
+  "id": "seed-audio-1-0",
+  "name": "Seed Audio 1.0",
+  "vendor": "ByteDance",
+  "category": "audio",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield",
+   "krea"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "krea.ai",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Generates speech, multi-speaker dialogue, SFX and music together in one prompt-driven pass.",
+  "format": "Scene-style natural-language prompt describing each element and its duration (length is set in the prompt), optional text/image/audio references (up to 3 voices for cloning).",
+  "negative": false
+ },
+ {
+  "id": "seed-speech",
+  "name": "Seed Speech",
+  "vendor": "ByteDance",
+  "category": "audio",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "seed.bytedance.com",
+   "higgsfield.ai"
+  ],
+  "summary": "ByteDance TTS model in Higgsfield Audio.",
+  "format": "Script text plus voice selection and emotion/pitch settings.",
+  "negative": false
+ },
+ {
+  "id": "elevenlabs-eleven-v3",
+  "name": "ElevenLabs Eleven v3",
+  "vendor": "ElevenLabs",
+  "category": "audio",
+  "platforms": [
+   "comfyui-api",
+   "higgsfield"
+  ],
+  "docs": [
+   "elevenlabs.io",
+   "higgsfield.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "ElevenLabs' most expressive TTS model, in Higgsfield Audio.",
+  "format": "Script text with inline audio tags like [whispers] or [laughs], plus voice selection.",
+  "negative": false
+ },
+ {
+  "id": "elevenlabs-tts-multilingual-v2",
+  "name": "ElevenLabs TTS (Multilingual v2)",
+  "vendor": "ElevenLabs",
+  "category": "audio",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "elevenlabs.io",
+   "krea.ai"
+  ],
+  "summary": "Natural multilingual voiceover in Krea Nodes (default model_id eleven_multilingual_v2).",
+  "format": "Plain script text with punctuation-driven pacing, plus voice selection.",
+  "negative": false
+ },
+ {
+  "id": "elevenlabs-music-v1-v2-v2-5",
+  "name": "ElevenLabs Music (v1 / v2 / v2.5)",
+  "vendor": "ElevenLabs",
+  "category": "audio",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "elevenlabs.io",
+   "krea.ai"
+  ],
+  "summary": "Studio-grade music and instrumental generation from text in Krea.",
+  "format": "Structured natural-language brief (genre, mood, BPM, instruments, structure, mix notes, vocals or instrumental) plus a duration setting.",
+  "negative": false
+ },
+ {
+  "id": "elevenlabs-video-to-music",
+  "name": "ElevenLabs Video to Music",
+  "vendor": "ElevenLabs",
+  "category": "audio",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "elevenlabs.io",
+   "krea.ai"
+  ],
+  "summary": "Generates background music that fits a source video.",
+  "format": "Source video plus an optional text description of style/mood.",
+  "negative": false
+ },
+ {
+  "id": "minimax-speech-2-8-hd",
+  "name": "MiniMax Speech 2.8 HD",
+  "vendor": "MiniMax",
+  "category": "audio",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "platform.minimax.io",
+   "higgsfield.ai"
+  ],
+  "summary": "High-fidelity MiniMax TTS with voice cloning.",
+  "format": "Script text plus voice, emotion, speed and pitch settings; supports interjection tags.",
+  "negative": false
+ },
+ {
+  "id": "vibevoice",
+  "name": "VibeVoice",
+  "vendor": "Microsoft",
+  "category": "audio",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "microsoft.github.io",
+   "higgsfield.ai"
+  ],
+  "summary": "Long-form, multi-speaker conversational TTS (podcast-style).",
+  "format": "Speaker-labelled script (Speaker 1:, Speaker 2:) plus voice assignment.",
+  "negative": false
+ },
+ {
+  "id": "qwen-audio-3-0-qwen-tts",
+  "name": "Qwen Audio 3.0 (Qwen TTS)",
+  "vendor": "Alibaba (Qwen)",
+  "category": "audio",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "qwen.ai",
+   "higgsfield.ai"
+  ],
+  "summary": "Qwen voice model added in the Audio redesign, for TTS, voice change and translation with lip-sync in 18 languages.",
+  "format": "Script text plus voice choice and advanced settings (emotion, pitch, format).",
+  "negative": false
+ },
+ {
+  "id": "qwen-tts-qwen-voice-clone",
+  "name": "Qwen TTS / Qwen Voice Clone",
+  "vendor": "Alibaba (Qwen)",
+  "category": "audio",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "qwen.ai",
+   "krea.ai"
+  ],
+  "summary": "Qwen text-to-speech and voice-cloning nodes in Krea workflows.",
+  "format": "Script text plus a voice preset or reference audio for cloning.",
+  "negative": false
+ },
+ {
+  "id": "thinksound",
+  "name": "ThinkSound",
+  "vendor": "Alibaba (FunAudioLLM)",
+  "category": "audio",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "github.com",
+   "krea.ai"
+  ],
+  "summary": "Chain-of-thought video-to-audio/SFX model in Krea Nodes.",
+  "format": "Source video plus an optional text caption describing the sounds.",
+  "negative": false
+ },
+ {
+  "id": "mmaudio",
+  "name": "MMAudio",
+  "vendor": "Sony AI / UIUC",
+  "category": "audio",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "github.com",
+   "krea.ai"
+  ],
+  "summary": "Video- and text-conditioned sound-effect/foley generation in Krea Nodes.",
+  "format": "Text prompt describing the sounds (optionally with a video), with a negative prompt to exclude sounds.",
+  "negative": true
+ },
+ {
+  "id": "hunyuan3d-3-1-pro-rapid",
+  "name": "Hunyuan3D 3.1 (Pro / Rapid)",
+  "vendor": "Tencent",
+  "category": "3d",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "3d.hunyuan.tencent.com",
+   "krea.ai"
+  ],
+  "summary": "High-fidelity text- or image-to-3D with optional PBR materials, multi-view input and adjustable face count.",
+  "format": "Short object description, or an image with the object isolated; PBR toggle and face-count settings; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "hunyuan3d-2-2mini-turbo-2-1",
+  "name": "Hunyuan3D 2 / 2mini-Turbo / 2.1",
+  "vendor": "Tencent",
+  "category": "3d",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "3d.hunyuan.tencent.com",
+   "krea.ai"
+  ],
+  "summary": "Earlier Hunyuan3D mesh generators (fast to high quality).",
+  "format": "Image input (text via a text-to-image step); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "trellis-2",
+  "name": "TRELLIS 2",
+  "vendor": "Microsoft",
+  "category": "3d",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "microsoft.github.io",
+   "krea.ai"
+  ],
+  "summary": "Native 3D generative model for high-quality textured assets.",
+  "format": "Image input of an isolated object; no text negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "trellis",
+  "name": "TRELLIS",
+  "vendor": "Microsoft",
+  "category": "3d",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "microsoft.github.io",
+   "krea.ai"
+  ],
+  "summary": "Original TRELLIS structured-latent 3D generator.",
+  "format": "Image of an isolated object as input.",
+  "negative": false
+ },
+ {
+  "id": "tripo-incl-tripo-h3-1",
+  "name": "Tripo (incl. Tripo H3.1)",
+  "vendor": "VAST (Tripo AI)",
+  "category": "3d",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "platform.tripo3d.ai",
+   "krea.ai"
+  ],
+  "summary": "Text/image-to-3D models; H3.1 is the newer high-detail version.",
+  "format": "Short object description or reference image; texture/PBR options.",
+  "negative": false
+ },
+ {
+  "id": "rodin-v2-5-and-fast",
+  "name": "Rodin V2.5 (and Fast)",
+  "vendor": "Hyper3D (Deemos)",
+  "category": "3d",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "developer.hyper3d.ai",
+   "krea.ai"
+  ],
+  "summary": "Production-grade text/image-to-3D with PBR materials.",
+  "format": "Object description or image(s), with quality, material and polycount options.",
+  "negative": false
+ },
+ {
+  "id": "meshy-v7",
+  "name": "Meshy V7",
+  "vendor": "Meshy",
+  "category": "3d",
+  "platforms": [
+   "krea"
+  ],
+  "docs": [
+   "docs.meshy.ai",
+   "krea.ai"
+  ],
+  "summary": "Text/image-to-3D with texturing.",
+  "format": "Object description (style, materials) or a reference image; art-style and topology options.",
+  "negative": false
+ },
+ {
+  "id": "higgsfield-3d-jutsu",
+  "name": "Higgsfield 3D Jutsu",
+  "vendor": "Higgsfield",
+  "category": "3d",
+  "platforms": [
+   "higgsfield"
+  ],
+  "docs": [
+   "higgsfield.ai"
+  ],
+  "summary": "AI 3D workspace that turns a prompt or reference into an editable 3D scene with cameras, lighting and animation, then renders it to video.",
+  "format": "Natural-language scene description or reference image, a chosen model (e.g. Nano Banana Pro, Seedream 5.0 Pro, Kling 3.0) and per-object edit prompts.",
+  "negative": false
+ },
+ {
+  "id": "gpt-image-2-5-flare-sunburst",
+  "name": "GPT Image 2.5 (Flare / Sunburst)",
+  "vendor": "OpenAI",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "platform.openai.com",
+   "docs.comfy.org"
+  ],
+  "summary": "OpenAI's newest image family: Flare for fast iteration and Sunburst for high-fidelity generation and editing with up to 16 reference images and five quality levels.",
+  "format": "Natural-language prompt or edit instruction; up to 16 reference images plus optional mask; quality (low to max) and transparency set via widgets; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-1-fill-expand-pro",
+  "name": "FLUX.1 Fill / Expand [pro]",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.bfl.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Prompt-guided inpainting (Fill) and outpainting (Expand) with FLUX.1 pro.",
+  "format": "Describe what should appear in the masked/extended area in natural language; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "kling-3-0-omni-o3",
+  "name": "Kling 3.0 Omni (O3)",
+  "vendor": "Kuaishou",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "klingai.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Kling v3 Omni: text/image/first-last-frame/reference/video-to-video, video editing and Omni image generation with audio and storyboards.",
+  "format": "Natural-language prompt referencing inputs as @image1/@video1 (sent as <<<image_1>>>); up to 6 storyboard shots; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "kling-avatar-2-0",
+  "name": "Kling Avatar 2.0",
+  "vendor": "Kuaishou",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "klingai.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Audio-driven talking avatar video from a portrait image.",
+  "format": "Optional natural-language prompt describing actions, emotions and camera moves; speech comes from the audio input.",
+  "negative": false
+ },
+ {
+  "id": "minimax-video-01-t2v-01-i2v-01-s2v-01-director",
+  "name": "MiniMax Video-01 (T2V-01 / I2V-01 / S2V-01, Director)",
+  "vendor": "MiniMax",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "platform.minimax.io",
+   "docs.comfy.org"
+  ],
+  "summary": "First-generation Hailuo video models incl. Director variants, live I2V and subject-reference S2V.",
+  "format": "Natural-language prompt; Director models accept bracketed camera commands such as [Pan left] or [Push in]; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "minimax-hailuo-02",
+  "name": "MiniMax Hailuo 02",
+  "vendor": "MiniMax",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "platform.minimax.io",
+   "docs.comfy.org"
+  ],
+  "summary": "Hailuo 02 text/image-to-video with strong physics at 768p/1080p.",
+  "format": "Natural-language prompt with optional prompt optimizer and bracketed camera commands; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "luma-photon-1-photon-flash-1",
+  "name": "Luma Photon 1 / Photon Flash 1",
+  "vendor": "Luma AI",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.lumalabs.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Luma's Photon text-to-image and image-modify models with image/style/character references.",
+  "format": "Natural-language prompt; references supplied via Luma Reference nodes with weights; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "runway-gen-3-alpha-turbo",
+  "name": "Runway Gen-3 Alpha Turbo",
+  "vendor": "Runway",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.dev.runwayml.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Runway image-to-video and first-last-frame model (gen3a_turbo).",
+  "format": "Short natural-language motion/camera description anchored to the input frame; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "runway-gen-4-turbo",
+  "name": "Runway Gen-4 Turbo",
+  "vendor": "Runway",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.dev.runwayml.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Runway Gen-4 Turbo image-to-video.",
+  "format": "Natural-language description of motion and camera relative to the input image; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "runway-aleph-2",
+  "name": "Runway Aleph 2",
+  "vendor": "Runway",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.dev.runwayml.com",
+   "docs.comfy.org"
+  ],
+  "summary": "In-context video-to-video editing (relight, restyle, add/remove objects) preserving original motion.",
+  "format": "Natural-language edit instruction with optional prompt images and keyframes; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "ideogram-p-image",
+  "name": "Ideogram P-Image",
+  "vendor": "Ideogram / Pruna",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.ideogram.ai",
+   "pruna.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Fast low-cost text-to-image model with quality tiers and 1K/2K output.",
+  "format": "Single natural-language prompt; AUTO prompt upsampling expands it into a structured caption; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "recraft-v3",
+  "name": "Recraft V3",
+  "vendor": "Recraft",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "recraft.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Design-oriented raster and vector (SVG) generation with style presets, custom styles, inpainting and background replace.",
+  "format": "Natural-language prompt plus style node (realistic, digital/vector illustration, logo) and color controls; negative_prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "grok-imagine-image-standard-pro-quality",
+  "name": "Grok Imagine Image (Standard / Pro / Quality)",
+  "vendor": "xAI",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.x.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "xAI text-to-image and image editing models.",
+  "format": "Natural-language prompt; edit references addressed as @Image1..; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "grok-imagine-image-2-0",
+  "name": "Grok Imagine Image 2.0",
+  "vendor": "xAI",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.x.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "xAI's newest image model for generation and multi-reference editing.",
+  "format": "Natural-language prompt; up to 3 references addressed as @Image1-@Image3; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "grok-imagine-video-video",
+  "name": "Grok Imagine Video",
+  "vendor": "xAI",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.x.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "xAI text/image-to-video with audio, plus video edit and extend.",
+  "format": "Natural-language shot description with sound; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "grok-imagine-video-1-5",
+  "name": "Grok Imagine Video 1.5",
+  "vendor": "xAI",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.x.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Improved Grok video model with reference-to-video (up to 7 images).",
+  "format": "Natural-language prompt referencing @Image1..@Image7 (and @Audio1); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "wan-2-5-preview-api",
+  "name": "Wan 2.5 Preview (API)",
+  "vendor": "Alibaba",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "wan.video",
+   "alibabacloud.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Hosted Wan 2.5 text-to-image, image-to-image, and text/image-to-video with audio.",
+  "format": "Natural-language prompt (Chinese/English) with optional driving audio; negative_prompt field.",
+  "negative": true
+ },
+ {
+  "id": "happyhorse-1-0",
+  "name": "HappyHorse 1.0",
+  "vendor": "Alibaba",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "alibabacloud.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Alibaba production video model: T2V, I2V, R2V and video edit with native audio.",
+  "format": "Natural-language shot description including dialogue/SFX; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "happyhorse-1-1",
+  "name": "HappyHorse 1.1",
+  "vendor": "Alibaba",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "alibabacloud.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Upgraded HappyHorse with multi-shot scenes, up to 9 identity references and synchronized audio.",
+  "format": "Natural-language (multi-shot) prompt with dialogue and sound cues; references by index; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "qwen-image-3-0-3-0-pro-api",
+  "name": "Qwen Image 3.0 / 3.0 Pro (API)",
+  "vendor": "Alibaba (Qwen)",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "qwen.ai",
+   "alibabacloud.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Hosted Qwen Image 3 text-to-image and multi-reference editing.",
+  "format": "Natural-language prompt (strong CN/EN text rendering); edit references as @Image1-@Image3; negative_prompt field.",
+  "negative": true
+ },
+ {
+  "id": "hy-image-3-5-preview",
+  "name": "HY Image 3.5 Preview",
+  "vendor": "Tencent",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "hunyuan.tencent.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Tencent Hunyuan image model for text-to-image and up-to-5-image editing at 1K-4K.",
+  "format": "Natural-language prompt; edits reference inputs as @Image1..@Image5; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "meta-muse-image-1-0",
+  "name": "Meta Muse Image 1.0",
+  "vendor": "Meta",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "ai.meta.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Meta Superintelligence Labs' agentic image model that can web-search, image-search and run code before rendering; generation and 10-image editing.",
+  "format": "Natural-language prompt (can ask for factual charts/layouts); references as @Image1..@Image10; reasoning strength high/low; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "reve-image-create-edit-remix",
+  "name": "Reve Image (Create / Edit / Remix)",
+  "vendor": "Reve",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "reve.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Reve's image creation, instruction editing and multi-image remix models (incl. fast edit/remix).",
+  "format": "Natural-language prompt (max 2560 chars) or edit instruction; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "mai-image-2-6-2-6-flash",
+  "name": "MAI Image 2.6 / 2.6 Flash",
+  "vendor": "Microsoft (via OpenRouter)",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "microsoft.ai",
+   "openrouter.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Microsoft AI image models for text-to-image and editing, exposed through the OpenRouter Image node.",
+  "format": "Natural-language prompt or edit instruction; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "bria-fibo-edit",
+  "name": "Bria FIBO (Edit)",
+  "vendor": "Bria AI",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.bria.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Licensed-data model driven by long structured JSON prompts for controllable editing and generation.",
+  "format": "Natural-language instruction converted to (or supplied as) a structured JSON prompt; negative_prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "quiver-arrow-arrow-2-2-telos-1-1-1-1-max",
+  "name": "Quiver Arrow (Arrow 2 / 2 Telos / 1.1 / 1.1 Max)",
+  "vendor": "QuiverAI",
+  "category": "image",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "quiver.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Text-to-SVG vector graphics generation and image vectorization.",
+  "format": "Natural-language description of the vector graphic/logo/icon; effort level widget; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "vidu-q1",
+  "name": "Vidu Q1",
+  "vendor": "ShengShu",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "platform.vidu.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Vidu Q1 1080p text/image/reference(up to 7)/start-end video generation.",
+  "format": "Natural-language prompt; movement amplitude via widget; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "pixverse-v3-5-legacy-nodes",
+  "name": "PixVerse v3.5 (legacy nodes)",
+  "vendor": "PixVerse",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "platform.pixverse.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Original PixVerse text/image-to-video, transition and template nodes.",
+  "format": "Natural-language prompt with motion mode/style widgets; negative_prompt field.",
+  "negative": true
+ },
+ {
+  "id": "ltx-2-5-api-fast-pro",
+  "name": "LTX-2.5 (API Fast / Pro)",
+  "vendor": "Lightricks",
+  "category": "video",
+  "platforms": [
+   "comfyui-api",
+   "comfyui-open"
+  ],
+  "docs": [
+   "ltx.video",
+   "docs.comfy.org"
+  ],
+  "summary": "Hosted LTX-2.5 text/image/audio-to-video with synchronized audio.",
+  "format": "Long, chronological natural-language paragraph (action, camera, lighting, audio); no negative prompt in API node.",
+  "negative": true
+ },
+ {
+  "id": "pruna-p-video-2",
+  "name": "Pruna P-Video-2",
+  "vendor": "Pruna AI",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "pruna.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Fast text/image-to-video model with optional audio, up to 20 s at 1080p.",
+  "format": "Natural-language prompt (max 5000 chars); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "heygen-avatar-avatar-iv-v",
+  "name": "HeyGen Avatar (Avatar IV / V)",
+  "vendor": "HeyGen",
+  "category": "video",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.heygen.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Talking-avatar video from a photo or a text-prompted generated character, driven by a script or audio.",
+  "format": "Script text for speech; optional natural-language prompt to create the avatar character; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "tripo-v2-5-v3-0-v3-1",
+  "name": "Tripo v2.5 / v3.0 / v3.1",
+  "vendor": "Tripo AI (VAST)",
+  "category": "3d",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "platform.tripo3d.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Tripo text/image/multiview-to-3D with texturing, rigging and retargeting.",
+  "format": "Short natural-language object description; optional negative_prompt (max 255 chars).",
+  "negative": true
+ },
+ {
+  "id": "tripo-p1",
+  "name": "Tripo P1",
+  "vendor": "Tripo AI (VAST)",
+  "category": "3d",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "platform.tripo3d.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Low-poly game-ready 3D generation from text, image or multiview.",
+  "format": "Short natural-language object description; optional negative_prompt.",
+  "negative": true
+ },
+ {
+  "id": "tripo-p2",
+  "name": "Tripo P2",
+  "vendor": "Tripo AI (VAST)",
+  "category": "3d",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "platform.tripo3d.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Quad-topology 3D generation (text, image, multiview) with geometry-only or textured output.",
+  "format": "Natural-language object description; optional negative_prompt.",
+  "negative": true
+ },
+ {
+  "id": "meshy-6-meshy-7-meshy-7-1",
+  "name": "Meshy 6 / Meshy 7 / Meshy 7.1",
+  "vendor": "Meshy",
+  "category": "3d",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.meshy.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Text/image-to-3D with refine, texture (text-prompted), rigging and animation.",
+  "format": "Natural-language object description (texture step also takes a style prompt); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "rodin-gen-2-5-text-to-3d",
+  "name": "Rodin Gen-2.5 (Text to 3D)",
+  "vendor": "Hyper3D (Deemos)",
+  "category": "3d",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "hyper3d.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Rodin Gen-2.5 text-to-3D (older Rodin Regular/Detail/Smooth/Sketch/Gen-2 nodes are image-to-3D).",
+  "format": "Natural-language object description up to 2500 chars; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "hunyuan3d-3-0-3-1-api",
+  "name": "Hunyuan3D 3.0 / 3.1 (API)",
+  "vendor": "Tencent",
+  "category": "3d",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "3d.hunyuan.tencent.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Hosted Hunyuan3D text/image-to-3D with PBR textures, texture edit, parts and smart topology.",
+  "format": "Natural-language object description; generation type (Normal/LowPoly/Geometry) via widget; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "elevenlabs-multilingual-v2",
+  "name": "ElevenLabs Multilingual v2",
+  "vendor": "ElevenLabs",
+  "category": "audio",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "elevenlabs.io",
+   "docs.comfy.org"
+  ],
+  "summary": "Stable multilingual text-to-speech (and v2 speech-to-speech).",
+  "format": "Plain script text; delivery via voice settings (stability, speed) rather than tags; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "elevenlabs-sound-effects-v2",
+  "name": "ElevenLabs Sound Effects v2",
+  "vendor": "ElevenLabs",
+  "category": "audio",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "elevenlabs.io",
+   "docs.comfy.org"
+  ],
+  "summary": "Text-to-sound-effects and ambience generation with duration control.",
+  "format": "Short natural-language sound description (source, action, environment); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "fish-audio-s2-1-pro-s1",
+  "name": "Fish Audio S2.1 Pro / S1",
+  "vendor": "Fish Audio",
+  "category": "audio",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "docs.fish.audio",
+   "docs.comfy.org"
+  ],
+  "summary": "Text-to-speech with voice cloning and multi-speaker support.",
+  "format": "Script text with inline emotion/tone markers per Fish Audio's prompt guide; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "sonilo-text-to-music-video-to-music",
+  "name": "Sonilo (Text to Music / Video to Music)",
+  "vendor": "Sonilo",
+  "category": "audio",
+  "platforms": [
+   "comfyui-api"
+  ],
+  "docs": [
+   "sonilo.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Music generation from a text prompt or synchronized to a video's pacing and emotion.",
+  "format": "Natural-language music description (genre, mood, instruments); prompt optional for video-to-music; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "stable-diffusion-1-5",
+  "name": "Stable Diffusion 1.5",
+  "vendor": "Stability AI / Runway",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "stability.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Classic 512px latent diffusion model with a huge fine-tune/LoRA ecosystem.",
+  "format": "CLIP-L comma-separated tags/short phrases (77-token chunks), (word:1.2) weighting syntax; CFG with negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "stable-diffusion-2-x-2-0-2-1",
+  "name": "Stable Diffusion 2.x (2.0 / 2.1)",
+  "vendor": "Stability AI",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "stability.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "OpenCLIP-based 512/768px successor to SD1.5 (plus unCLIP variants).",
+  "format": "Tag/phrase prompts with (word:weight) syntax; negative prompt important for quality.",
+  "negative": true
+ },
+ {
+  "id": "sdxl-1-0-base-refiner-turbo-ssd-1b-vega",
+  "name": "SDXL 1.0 (Base + Refiner, Turbo, SSD-1B/Vega)",
+  "vendor": "Stability AI",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "stability.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "1024px dual-CLIP diffusion model and its distilled/turbo variants; foundation of Pony/Illustrious fine-tunes.",
+  "format": "Natural phrases or comma tags (anime fine-tunes use Danbooru tags), (word:1.2) weighting; negative prompt used except Turbo (CFG 1).",
+  "negative": true
+ },
+ {
+  "id": "stable-cascade",
+  "name": "Stable Cascade",
+  "vendor": "Stability AI",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "stability.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Würstchen-architecture three-stage text-to-image model.",
+  "format": "CLIP-G natural-language/tag prompt; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "stable-diffusion-3-5-large-large-turbo-medium",
+  "name": "Stable Diffusion 3.5 (Large / Large Turbo / Medium)",
+  "vendor": "Stability AI",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "stability.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "MMDiT text-to-image model with CLIP-L, CLIP-G and T5-XXL encoders; ControlNets available.",
+  "format": "Natural-language descriptive prompts (T5 handles long text and typography); negative prompt supported (Turbo runs at CFG ~1).",
+  "negative": true
+ },
+ {
+  "id": "auraflow",
+  "name": "AuraFlow",
+  "vendor": "Fal",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "fal.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Open flow-based text-to-image model.",
+  "format": "Natural-language prompt (Pile-T5 encoder); negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "pixart-pixart",
+  "name": "PixArt-α / PixArt-Σ",
+  "vendor": "PixArt (Huawei Noah's Ark)",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "pixart-alpha.github.io",
+   "docs.comfy.org"
+  ],
+  "summary": "Efficient T5-conditioned DiT text-to-image models up to 4K (Sigma).",
+  "format": "Long natural-language T5 prompts; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "hunyuan-dit-1-0-1-1-1-2",
+  "name": "Hunyuan-DiT (1.0 / 1.1 / 1.2)",
+  "vendor": "Tencent",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "hunyuan.tencent.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Bilingual Chinese/English DiT text-to-image model.",
+  "format": "Natural-language Chinese or English prompt (mT5 + CLIP); negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "flux-1-dev",
+  "name": "FLUX.1 [dev]",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "bfl.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "12B guidance-distilled open-weight text-to-image model (plus Fill/Canny/Depth/Redux tools).",
+  "format": "Natural-language T5 prompt with CLIP-L; FluxGuidance (~3.5) instead of CFG, so negative prompt is ignored.",
+  "negative": false
+ },
+ {
+  "id": "flux-1-schnell",
+  "name": "FLUX.1 [schnell]",
+  "vendor": "Black Forest Labs",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "bfl.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Apache-2.0 timestep-distilled 1-4 step FLUX.1 variant.",
+  "format": "Natural-language prompt; CFG 1, no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "flux-1-krea-dev",
+  "name": "FLUX.1 Krea [dev]",
+  "vendor": "Black Forest Labs / Krea",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "bfl.ai",
+   "krea.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Opinionated-aesthetic FLUX.1 dev derivative focused on natural photographic detail.",
+  "format": "Natural-language descriptive prompt; guidance-distilled, no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "uso-flux-1-based",
+  "name": "USO (FLUX.1-based)",
+  "vendor": "ByteDance",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "bytedance.github.io",
+   "docs.comfy.org"
+  ],
+  "summary": "Unified style- and subject-driven generation built on FLUX.1 dev.",
+  "format": "Natural-language prompt plus subject/style reference images; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "chroma-chroma1-radiance",
+  "name": "Chroma / Chroma1-Radiance",
+  "vendor": "Lodestone Rock",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "huggingface.co",
+   "docs.comfy.org"
+  ],
+  "summary": "8.9B de-distilled FLUX.1-schnell derivative (Radiance works in pixel space).",
+  "format": "Natural-language T5 prompt (tags also work); real CFG so negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "hidream-i1-full-dev-fast",
+  "name": "HiDream-I1 (Full / Dev / Fast)",
+  "vendor": "HiDream.ai",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "hidream.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "17B sparse-DiT text-to-image model with four text encoders incl. Llama 3.1.",
+  "format": "Natural-language prompt (Llama/T5 read long text); Full uses CFG ~5 with negative prompt, Dev/Fast run at CFG 1.",
+  "negative": true
+ },
+ {
+  "id": "hidream-e1-e1-1",
+  "name": "HiDream-E1 / E1.1",
+  "vendor": "HiDream.ai",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "hidream.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Instruction-based image editing models built on HiDream-I1.",
+  "format": "Natural-language edit instruction; negative prompt supported with CFG.",
+  "negative": true
+ },
+ {
+  "id": "hidream-o1-image-full-dev",
+  "name": "HiDream-O1-Image (Full / Dev)",
+  "vendor": "HiDream.ai",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "hidream.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Unified text-to-image, editing and subject personalization up to 2048px with strong long-text rendering.",
+  "format": "Natural-language prompt specifying text content, font, color and position; Dev runs at CFG 1 with no negative, Full uses CFG.",
+  "negative": true
+ },
+ {
+  "id": "omnigen2",
+  "name": "OmniGen2",
+  "vendor": "VectorSpaceLab (BAAI)",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "vectorspacelab.github.io",
+   "docs.comfy.org"
+  ],
+  "summary": "7B unified model for text-to-image, instruction editing and multi-image composition.",
+  "format": "Natural-language prompt or instruction referring to input images; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "lumina-image-2-0-incl-neta-lumina-netayume",
+  "name": "Lumina Image 2.0 (incl. Neta Lumina / NetaYume)",
+  "vendor": "Alpha-VLLM (Shanghai AI Lab)",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "github.com",
+   "docs.comfy.org"
+  ],
+  "summary": "2.6B Gemma-conditioned Next-DiT text-to-image model and its anime fine-tunes.",
+  "format": "System-prompt prefix (e.g. 'You are an assistant designed to generate superior images...<Prompt Start>') followed by natural language or Danbooru tags; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "newbie-image-exp0-1",
+  "name": "NewBie-image Exp0.1",
+  "vendor": "NewBieAI Lab",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "github.com",
+   "docs.comfy.org"
+  ],
+  "summary": "3.5B Next-DiT anime text-to-image model with Gemma3-4B and Jina CLIP encoders.",
+  "format": "XML-structured prompts (e.g. <character>, <general_tags>) containing Danbooru tags, or plain tags; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "anima-preview-base-v1",
+  "name": "Anima (Preview / Base v1)",
+  "vendor": "CircleStone Labs / Comfy Org",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "huggingface.co",
+   "docs.comfy.org"
+  ],
+  "summary": "2B anime/illustration model (Cosmos-Predict2-based) with a Qwen3 0.6B text encoder.",
+  "format": "Danbooru-style tags mixed with natural language (quality/artist tags); CFG with negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "cosmos-predict2-text2image-video2world",
+  "name": "Cosmos Predict2 (Text2Image / Video2World)",
+  "vendor": "NVIDIA",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "research.nvidia.com",
+   "docs.comfy.org"
+  ],
+  "summary": "NVIDIA world-foundation models (2B/14B) for text-to-image and image/video-to-world video (Cosmos 1.0 also supported).",
+  "format": "Long, physically descriptive natural-language T5 prompts; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "hunyuanimage-2-1",
+  "name": "HunyuanImage 2.1",
+  "vendor": "Tencent",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "hunyuan.tencent.com",
+   "docs.comfy.org"
+  ],
+  "summary": "17B 2K text-to-image model with refiner and ByT5 glyph encoder for text.",
+  "format": "Natural-language CN/EN prompt, in-image text in quotes; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "qwen-image-edit-original-2509-2511",
+  "name": "Qwen-Image-Edit (original / 2509 / 2511)",
+  "vendor": "Alibaba (Qwen)",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "qwen.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Instruction-based editing variants of Qwen-Image with multi-image input and text editing.",
+  "format": "Natural-language edit instruction referencing 'image 1/2/3'; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "qwen-image-layered",
+  "name": "Qwen-Image-Layered",
+  "vendor": "Alibaba (Qwen)",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "qwen.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Decomposes an image into editable RGBA layers.",
+  "format": "Optional natural-language caption of the image; CFG ~4 with negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "z-image-turbo-image",
+  "name": "Z-Image-Turbo",
+  "vendor": "Alibaba (Tongyi-MAI)",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "comfyui-open"
+  ],
+  "docs": [
+   "tongyi-mai.github.io",
+   "docs.comfy.org"
+  ],
+  "summary": "8-step distilled 6B photoreal text-to-image model (also a Comfy Cloud node).",
+  "format": "Long descriptive natural-language prompt; CFG 1, no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "kandinsky-5-0-image-lite",
+  "name": "Kandinsky 5.0 Image Lite",
+  "vendor": "Kandinsky Lab (Sber AI)",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "kandinskylab.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Lightweight Kandinsky 5 text-to-image model for English and Russian prompts.",
+  "format": "Natural-language English/Russian prompt; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "boogu-image-0-1-base-turbo-edit",
+  "name": "Boogu-Image-0.1 (Base / Turbo / Edit)",
+  "vendor": "Boogu",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "boogu.org",
+   "docs.comfy.org"
+  ],
+  "summary": "Apache-2.0 10B unified generation and editing family with bilingual text rendering.",
+  "format": "Natural-language prompt or edit instruction; Turbo runs 3-4 steps without negative, Base uses CFG.",
+  "negative": true
+ },
+ {
+  "id": "ovis-image",
+  "name": "Ovis-Image",
+  "vendor": "Alibaba (AIDC-AI)",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "github.com",
+   "docs.comfy.org"
+  ],
+  "summary": "7B text-rendering-focused text-to-image model for posters, banners and UI mockups.",
+  "format": "Natural-language prompt with exact text in quotes; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "ernie-image-ernie-image-turbo",
+  "name": "ERNIE-Image / ERNIE-Image-Turbo",
+  "vendor": "Baidu",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "yiyan.baidu.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Apache-2.0 8B DiT with precise text rendering and a built-in 3B Prompt Enhancer.",
+  "format": "Short or long natural-language prompts (enhancer expands them); quoted text for typography; base supports negative, Turbo runs without CFG.",
+  "negative": true
+ },
+ {
+  "id": "lens-lens-turbo",
+  "name": "Lens / Lens Turbo",
+  "vendor": "Microsoft",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "microsoft.com",
+   "docs.comfy.org"
+  ],
+  "summary": "MIT-licensed 3.8B dual-stream MMDiT using GPT-OSS-20B text features and the FLUX.2 VAE.",
+  "format": "Natural-language prompt with resolution/aspect widgets; Turbo is distilled (no negative).",
+  "negative": false
+ },
+ {
+  "id": "pixeldit",
+  "name": "PixelDiT",
+  "vendor": "NVIDIA",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "research.nvidia.com",
+   "docs.comfy.org"
+  ],
+  "summary": "1.3B VAE-free pixel-space DiT for 1024px text-to-image (non-commercial license).",
+  "format": "Natural-language positive prompt plus negative prompt.",
+  "negative": true
+ },
+ {
+  "id": "mage-flow-mage-flow-turbo-mage-flow-edit",
+  "name": "Mage-Flow / Mage-Flow Turbo / Mage-Flow-Edit",
+  "vendor": "Microsoft",
+  "category": "image",
+  "platforms": [
+   "comfyui-api",
+   "comfyui-open"
+  ],
+  "docs": [
+   "microsoft.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Compact 4B native-resolution text-to-image and instruction-editing stack (512-2048px, any aspect); also on Comfy Cloud.",
+  "format": "Natural-language prompt or edit instruction; full model takes a negative prompt, 4-step Turbo runs at CFG 1.",
+  "negative": true
+ },
+ {
+  "id": "longcat-image-longcat-image-edit",
+  "name": "LongCat-Image / LongCat-Image-Edit",
+  "vendor": "Meituan",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "longcat.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Bilingual photoreal text-to-image with accurate text rendering, plus an instruction editing model.",
+  "format": "Natural-language Chinese/English prompt, in-image text in quotes; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "joyai-image-edit",
+  "name": "JoyAI Image Edit",
+  "vendor": "JD.com",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "github.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Spatially aware instruction-based image editing model.",
+  "format": "Natural-language edit instruction; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "firered-image-edit-1-1",
+  "name": "FireRed Image Edit 1.1",
+  "vendor": "FireRed Team (Xiaohongshu)",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "github.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Instruction editing model focused on identity consistency and multi-element fusion.",
+  "format": "Natural-language edit instruction referencing input images; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "chronoedit-14b",
+  "name": "ChronoEdit 14B",
+  "vendor": "NVIDIA",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "research.nvidia.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Physically plausible image editing built on a Wan2.1 video backbone.",
+  "format": "Natural-language edit instruction; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "sensenova-u1-5",
+  "name": "SenseNova U1.5",
+  "vendor": "SenseTime",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "github.com",
+   "docs.comfy.org"
+  ],
+  "summary": "8B natively unified multimodal model for up to 4K text-to-image and multi-reference editing.",
+  "format": "Natural-language prompt or detailed edit instruction; references by index; no negative prompt required.",
+  "negative": false
+ },
+ {
+  "id": "capybara-v0-1",
+  "name": "Capybara v0.1",
+  "vendor": "Capybara (community)",
+  "category": "image",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "huggingface.co",
+   "docs.comfy.org"
+  ],
+  "summary": "Unified model for text-to-image, image edit, image-to-video and video edit (templates for each).",
+  "format": "Natural-language prompt or instruction; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "wan-2-1-vace",
+  "name": "Wan 2.1 VACE",
+  "vendor": "Alibaba (Wan)",
+  "category": "video",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "wan.video",
+   "docs.comfy.org"
+  ],
+  "summary": "All-in-one video creation/editing (reference-to-video, control, inpaint, outpaint).",
+  "format": "Natural-language prompt plus control/reference video inputs; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "wan-2-2-s2v",
+  "name": "Wan 2.2 S2V",
+  "vendor": "Alibaba (Wan)",
+  "category": "video",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "wan.video",
+   "docs.comfy.org"
+  ],
+  "summary": "Audio-driven speech-to-video from a reference image and audio.",
+  "format": "Natural-language description of scene and action; audio drives lip sync; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "wan-alpha",
+  "name": "Wan-Alpha",
+  "vendor": "Alibaba (Wan) community",
+  "category": "video",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "github.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Wan2.1-based text-to-video with alpha-channel (transparent) output.",
+  "format": "Natural-language prompt describing the isolated subject; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "wan-causal-forcing-causal-forcing",
+  "name": "Wan Causal Forcing / Causal Forcing++",
+  "vendor": "Community (Wan2.1-based)",
+  "category": "video",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "github.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Autoregressive few-step (down to 1 step) Wan2.1 image-to-video.",
+  "format": "Natural-language motion description; distilled, no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "humo",
+  "name": "HuMo",
+  "vendor": "ByteDance",
+  "category": "video",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "github.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Human-centric video generation from text, reference image and audio with lip sync.",
+  "format": "Natural-language description of the person and action; audio input drives speech; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "bernini-r",
+  "name": "Bernini-R",
+  "vendor": "ByteDance",
+  "category": "video",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "github.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Wan2.2-based in-context image/video editing (relight, restyle, subject insertion).",
+  "format": "Natural-language edit instruction with source video/reference images; runs with step-distill LoRA (CFG 1).",
+  "negative": false
+ },
+ {
+  "id": "hunyuanvideo-1-5",
+  "name": "HunyuanVideo 1.5",
+  "vendor": "Tencent",
+  "category": "video",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "hunyuan.tencent.com",
+   "docs.comfy.org"
+  ],
+  "summary": "8.3B lightweight 720p T2V/I2V model with super-resolution stage.",
+  "format": "Natural-language prompt (Qwen2.5-VL encoder, CN/EN, quoted text); CFG with negative prompt for non-distilled checkpoints.",
+  "negative": true
+ },
+ {
+  "id": "ltx-video-0-9-x",
+  "name": "LTX-Video 0.9.x",
+  "vendor": "Lightricks",
+  "category": "video",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "ltx.video",
+   "docs.comfy.org"
+  ],
+  "summary": "Fast DiT text/image-to-video models (0.9.5+ with keyframes).",
+  "format": "Long chronological natural-language paragraph starting with the main action; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "mochi-1",
+  "name": "Mochi 1",
+  "vendor": "Genmo",
+  "category": "video",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "genmo.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "10B Apache-2.0 asymmetric DiT text-to-video model.",
+  "format": "Detailed natural-language T5 prompt; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "cogvideox-t2v-i2v",
+  "name": "CogVideoX (T2V / I2V)",
+  "vendor": "Zhipu AI (Z.ai)",
+  "category": "video",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "github.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Open 2B/5B text- and image-to-video models, natively supported.",
+  "format": "Long descriptive natural-language T5 prompt; negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "kandinsky-5-0-video-lite-pro",
+  "name": "Kandinsky 5.0 Video (Lite / Pro)",
+  "vendor": "Kandinsky Lab (Sber AI)",
+  "category": "video",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "kandinskylab.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "2B Lite and 19B Pro text/image-to-video models (SFT, CFG-distilled and step-distilled variants).",
+  "format": "Natural-language English/Russian prompt; negative prompt with CFG on SFT/pretrain checkpoints (distilled run CFG 1).",
+  "negative": true
+ },
+ {
+  "id": "stable-audio-open-1-0",
+  "name": "Stable Audio Open 1.0",
+  "vendor": "Stability AI",
+  "category": "audio",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "stability.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Open text-to-audio model for up to ~47 s of sound effects and music loops.",
+  "format": "Tag-like descriptive prompt (genre, instruments, BPM, e.g. '128 BPM tech house drum loop'); negative prompt supported.",
+  "negative": true
+ },
+ {
+  "id": "stable-audio-3-medium-medium-base",
+  "name": "Stable Audio 3 (Medium / Medium Base)",
+  "vendor": "Stability AI",
+  "category": "audio",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "stability.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Stereo music/SFX/instrument generation with Qwen-based prompt expansion and category-aware reprompting.",
+  "format": "Short text idea plus category (music, SFX, instrument); workflow expands it with Qwen; duration widget.",
+  "negative": true
+ },
+ {
+  "id": "ace-step-v1-3-5b",
+  "name": "ACE-Step v1 (3.5B)",
+  "vendor": "ACE Studio / StepFun",
+  "category": "audio",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "ace-step.github.io",
+   "docs.comfy.org"
+  ],
+  "summary": "Apache-2.0 text-to-music/song model with lyric editing (M2M).",
+  "format": "Comma-separated style tags (genre, mood, instruments, vocal type) plus lyrics with [verse]/[chorus] section markers; negative conditioning is zeroed rather than written.",
+  "negative": false
+ },
+ {
+  "id": "ace-step-1-5-incl-xl-base-sft-turbo",
+  "name": "ACE-Step 1.5 (incl. XL Base / SFT / Turbo)",
+  "vendor": "ACE Studio / StepFun",
+  "category": "audio",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "ace-step.github.io",
+   "docs.comfy.org"
+  ],
+  "summary": "Fast song generation with an LM planner (0.6B-4B) and 2B/4B XL diffusion decoders.",
+  "format": "Style tags/caption plus lyrics with section tags; BPM, key and duration as widgets; negative conditioning is zeroed (Turbo runs without CFG).",
+  "negative": false
+ },
+ {
+  "id": "yue2",
+  "name": "YuE2",
+  "vendor": "Multimodal Art Projection (m-a-p)",
+  "category": "audio",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "github.com",
+   "docs.comfy.org"
+  ],
+  "summary": "Open lyrics-to-song model with ABC-notation planning and melody-preserving covers.",
+  "format": "Music style description plus lyrics using [Verse]/[Chorus] section tags; cfg_scale widget (default 1).",
+  "negative": false
+ },
+ {
+  "id": "minimax-music-3",
+  "name": "MiniMax Music 3",
+  "vendor": "MiniMax",
+  "category": "audio",
+  "platforms": [
+   "comfyui-api",
+   "comfyui-open"
+  ],
+  "docs": [
+   "minimax.io",
+   "docs.comfy.org"
+  ],
+  "summary": "Full-song generation up to 5 minutes with vocals from a caption and lyrics (native and Comfy Cloud node).",
+  "format": "Structured music caption (style, mood, vocals, arrangement) plus lyrics with [Intro]/[Verse]/[Chorus] tags; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "gemma-4",
+  "name": "Gemma 4",
+  "vendor": "Google",
+  "category": "text",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "ai.google.dev",
+   "docs.comfy.org",
+   "huggingface.co"
+  ],
+  "summary": "Lightweight open LLM run natively for text generation, image/video understanding and audio transcription.",
+  "format": "Chat-style natural-language instructions with optional media inputs; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "qwen3-4b",
+  "name": "Qwen3 (4B)",
+  "vendor": "Alibaba (Qwen)",
+  "category": "text",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "qwen.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Open reasoning LLM run natively for text generation and prompt expansion.",
+  "format": "Chat-style natural-language instructions (thinking mode optional); no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "qwen3-5-4b-multimodal",
+  "name": "Qwen3.5 (4B multimodal)",
+  "vendor": "Alibaba (Qwen)",
+  "category": "text",
+  "platforms": [
+   "comfyui-open"
+  ],
+  "docs": [
+   "qwen.ai",
+   "docs.comfy.org"
+  ],
+  "summary": "Open multimodal LLM for image captioning, reverse prompt engineering and VQA.",
+  "format": "Natural-language instruction with an input image; no negative prompt.",
+  "negative": false
+ },
+ {
+  "id": "claude-fable-5-1",
+  "name": "Claude Fable 5.1",
+  "vendor": "Anthropic",
+  "category": "text",
+  "docs": [
+   "platform.claude.com",
+   "anthropic.com"
+  ],
+  "summary": "Anthropic's most capable widely released model (Sep 2026) for hard reasoning and long-horizon agents; 1M context, 128K output.",
+  "format": "Clear, direct system prompt with XML-tagged sections; thinking always on (adaptive), depth via effort (default high); ask explicitly for progress updates in agentic runs.",
+  "negative": false,
+  "platforms": [
+   "comfyui-api"
+  ]
+ },
+ {
+  "id": "claude-mythos-5-1",
+  "name": "Claude Mythos 5.1",
+  "vendor": "Anthropic",
+  "category": "text",
+  "docs": [
+   "platform.claude.com",
+   "anthropic.com"
+  ],
+  "summary": "Restricted-access sibling of Fable 5.1 for vetted cyber-defense and life-sciences orgs.",
+  "format": "Same as Fable 5.1: XML-structured prompts, always-on adaptive thinking, effort controls depth.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "claude-opus-5-5",
+  "name": "Claude Opus 5.5",
+  "vendor": "Anthropic",
+  "category": "text",
+  "docs": [
+   "platform.claude.com",
+   "anthropic.com"
+  ],
+  "summary": "Anthropic's recommended default for long-running agentic coding and knowledge work (Sep 2026); 1M context.",
+  "format": "Explicit, role-setting system prompt with XML-tag separation; thinking always on; effort defaults to medium, raise for hard tasks; dedicated 'Prompting Claude Opus 5.5' guide.",
+  "negative": false,
+  "platforms": [
+   "comfyui-api"
+  ]
+ },
+ {
+  "id": "claude-opus-5",
+  "name": "Claude Opus 5",
+  "vendor": "Anthropic",
+  "category": "text",
+  "docs": [
+   "platform.claude.com"
+  ],
+  "summary": "Previous Opus (Jul 2026), still available; superseded by Opus 5.5.",
+  "format": "XML-tagged prompts; thinking on by default; verbose by default so request conciseness explicitly; prefer lower effort over disabling thinking.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "claude-sonnet-5",
+  "name": "Claude Sonnet 5",
+  "vendor": "Anthropic",
+  "category": "text",
+  "docs": [
+   "platform.claude.com",
+   "anthropic.com"
+  ],
+  "summary": "Anthropic's speed/intelligence balance model (Jun 2026); 1M context.",
+  "format": "XML tags, clear role in system prompt; follows instructions literally so state everything wanted; adaptive thinking, effort default high.",
+  "negative": false,
+  "platforms": [
+   "comfyui-api"
+  ]
+ },
+ {
+  "id": "claude-haiku-4-5",
+  "name": "Claude Haiku 4.5",
+  "vendor": "Anthropic",
+  "category": "text",
+  "docs": [
+   "platform.claude.com"
+  ],
+  "summary": "Anthropic's fastest, cheapest current model; 200K context.",
+  "format": "XML-tagged explicit prompts with examples; legacy extended thinking via budget_tokens, no effort parameter.",
+  "negative": false,
+  "platforms": [
+   "comfyui-api"
+  ]
+ },
+ {
+  "id": "gpt-6-astra",
+  "name": "GPT-6 Astra",
+  "vendor": "OpenAI",
+  "category": "text",
+  "docs": [
+   "developers.openai.com",
+   "platform.openai.com",
+   "openai.com"
+  ],
+  "summary": "OpenAI's most capable model (Sep 2026).",
+  "format": "Responses API developer message defining outcome, context, tool boundaries, verification and deliverable; reasoning effort low/medium/high; drop temperature/top_p; OpenAI guide lists 'slop' phrases to ban.",
+  "negative": false,
+  "platforms": [
+   "comfyui-api"
+  ]
+ },
+ {
+  "id": "gpt-6-sol-luna",
+  "name": "GPT-6 Sol / Luna",
+  "vendor": "OpenAI",
+  "category": "text",
+  "docs": [
+   "developers.openai.com",
+   "platform.openai.com"
+  ],
+  "summary": "GPT-6 mid tier (Sol) and cost-efficient high-volume tier (Luna), Sep 2026.",
+  "format": "Same developer-message guidance as Astra; reasoning effort none-high; standard/pro reasoning mode.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "gpt-5-6-sol-terra-luna",
+  "name": "GPT-5.6 (Sol / Terra / Luna)",
+  "vendor": "OpenAI",
+  "category": "text",
+  "docs": [
+   "developers.openai.com",
+   "openai.com"
+  ],
+  "summary": "Previous OpenAI generation (Jul 2026), still supported.",
+  "format": "Responses API developer message, explicit reasoning.effort, well-specified task instructions.",
+  "negative": false,
+  "platforms": [
+   "comfyui-api"
+  ]
+ },
+ {
+  "id": "gpt-5-5-gpt-5-5-pro",
+  "name": "GPT-5.5 / GPT-5.5 Pro",
+  "vendor": "OpenAI",
+  "category": "text",
+  "docs": [
+   "developers.openai.com",
+   "openai.com"
+  ],
+  "summary": "OpenAI's April 2026 generation, still in the API.",
+  "format": "GPT-5 prompting guide: structured developer message (markdown/XML sections), reasoning_effort and verbosity, explicit stop conditions and eagerness rules.",
+  "negative": false,
+  "platforms": [
+   "comfyui-api"
+  ]
+ },
+ {
+  "id": "gpt-oss-120b-20b",
+  "name": "gpt-oss (120b / 20b)",
+  "vendor": "OpenAI",
+  "category": "text",
+  "docs": [
+   "openai.com",
+   "huggingface.co"
+  ],
+  "summary": "OpenAI's Apache-2.0 open-weight reasoning models.",
+  "format": "Must use the harmony chat format (system/developer/user roles, analysis/final channels); reasoning low/medium/high set in the system message.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "gemini-3-1-pro",
+  "name": "Gemini 3.1 Pro",
+  "vendor": "Google",
+  "category": "text",
+  "docs": [
+   "ai.google.dev",
+   "cloud.google.com"
+  ],
+  "summary": "Google's current Pro model.",
+  "format": "Direct, structured system instructions with XML or markdown (<role>, <constraints>, <context>, <task>), key constraints first, question last for long context; default temperature; thinking_level controls reasoning.",
+  "negative": false,
+  "platforms": [
+   "comfyui-api"
+  ]
+ },
+ {
+  "id": "gemini-3-8-flash",
+  "name": "Gemini 3.8 Flash",
+  "vendor": "Google",
+  "category": "text",
+  "docs": [
+   "ai.google.dev",
+   "cloud.google.com",
+   "blog.google"
+  ],
+  "summary": "Google's newest workhorse model (Sep 2026) for agentic and long-horizon work.",
+  "format": "Gemini 3 prompting guide: concise delimited prompts, default temperature, thinking_level.",
+  "negative": false,
+  "platforms": [
+   "comfyui-api"
+  ]
+ },
+ {
+  "id": "gemini-3-5-flash-lite",
+  "name": "Gemini 3.5 Flash-Lite",
+  "vendor": "Google",
+  "category": "text",
+  "docs": [
+   "ai.google.dev"
+  ],
+  "summary": "Google's cheapest and fastest Gemini model (Jul 2026).",
+  "format": "Gemini 3 guide; short explicit prompts with examples; low thinking for high-volume tasks.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "muse-spark-1-3",
+  "name": "Muse Spark 1.3",
+  "vendor": "Meta",
+  "category": "text",
+  "docs": [
+   "developer.meta.com",
+   "ai.meta.com"
+  ],
+  "summary": "Meta Superintelligence Labs' closed flagship (Sep 2026), agentic and coding focused, 1M context.",
+  "format": "OpenAI-SDK-compatible API: standard system/user messages with tool calling.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "llama-4-scout-maverick",
+  "name": "Llama 4 (Scout / Maverick)",
+  "vendor": "Meta",
+  "category": "text",
+  "docs": [
+   "llama.com",
+   "huggingface.co"
+  ],
+  "summary": "Meta's last open-weight Llama release, widely self-hosted.",
+  "format": "Llama 4 chat template with system/user/assistant headers; concise system prompt; JSON tool calls defined in system prompt.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "grok-4-7",
+  "name": "Grok 4.7",
+  "vendor": "xAI",
+  "category": "text",
+  "docs": [
+   "docs.x.ai",
+   "x.ai"
+  ],
+  "summary": "xAI's current flagship (Sep 2026), 500K context.",
+  "format": "OpenAI-compatible chat with system prompt, reasoning levels and native tools; follows prompts strictly, so write detailed system prompts.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "grok-4-20",
+  "name": "Grok 4.20",
+  "vendor": "xAI",
+  "category": "text",
+  "docs": [
+   "docs.x.ai"
+  ],
+  "summary": "xAI's Feb 2026 line with reasoning, non-reasoning and multi-agent variants, 1M context.",
+  "format": "OpenAI-compatible system/user format; choose reasoning variant by model ID.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "deepseek-v4-pro",
+  "name": "DeepSeek V4-Pro",
+  "vendor": "DeepSeek",
+  "category": "text",
+  "docs": [
+   "api-docs.deepseek.com",
+   "huggingface.co"
+  ],
+  "summary": "DeepSeek's open-weight MoE flagship, 1M context.",
+  "format": "OpenAI-compatible chat; thinking mode on by default; keep system prompt simple; don't send reasoning_content back in later turns.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "deepseek-v4-1-flash",
+  "name": "DeepSeek V4.1-Flash",
+  "vendor": "DeepSeek",
+  "category": "text",
+  "docs": [
+   "api-docs.deepseek.com"
+  ],
+  "summary": "DeepSeek's fast, cheap tier (Sep 2026) with vision, 1M context.",
+  "format": "OpenAI-compatible; thinking and non-thinking modes.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "qwen3-8-max",
+  "name": "Qwen3.8-Max",
+  "vendor": "Alibaba (Qwen)",
+  "category": "text",
+  "docs": [
+   "alibabacloud.com",
+   "qwen.ai"
+  ],
+  "summary": "Alibaba's proprietary Qwen flagship (Aug 2026).",
+  "format": "OpenAI-compatible system/user; enable_thinking toggle; structured markdown prompts.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "qwen3-8-flash-qwen3-7-plus",
+  "name": "Qwen3.8-Flash / Qwen3.7-Plus",
+  "vendor": "Alibaba (Qwen)",
+  "category": "text",
+  "docs": [
+   "alibabacloud.com"
+  ],
+  "summary": "Qwen's faster and mid-tier hosted models.",
+  "format": "OpenAI-compatible with enable_thinking hybrid reasoning.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "qwen3-6-open-weights",
+  "name": "Qwen3.6 (open weights)",
+  "vendor": "Alibaba (Qwen)",
+  "category": "text",
+  "docs": [
+   "qwen.ai",
+   "huggingface.co"
+  ],
+  "summary": "Current Apache-2.0 open-weight Qwen generation (Apr 2026).",
+  "format": "ChatML template; thinking toggled via enable_thinking or /think and /no_think; mode-specific sampling settings.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "qwen3-coder-next",
+  "name": "Qwen3-Coder-Next",
+  "vendor": "Alibaba (Qwen)",
+  "category": "text",
+  "docs": [
+   "qwen.ai",
+   "huggingface.co"
+  ],
+  "summary": "Qwen's open-weight coding-agent model for local agentic coding.",
+  "format": "ChatML with tool definitions for agent loops.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "mistral-medium-3-5",
+  "name": "Mistral Medium 3.5",
+  "vendor": "Mistral AI",
+  "category": "text",
+  "docs": [
+   "docs.mistral.ai"
+  ],
+  "summary": "Mistral's open-weight frontier model (Apr 2026) merging reasoning and coding.",
+  "format": "Chat completions with system prompt; reasoning via prompt_mode/reasoning settings; function calling and JSON output.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "mistral-large-3",
+  "name": "Mistral Large 3",
+  "vendor": "Mistral AI",
+  "category": "text",
+  "docs": [
+   "docs.mistral.ai"
+  ],
+  "summary": "Mistral's Apache-2.0 open-weight multimodal MoE generalist.",
+  "format": "Standard system/user chat, function calling, JSON mode.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "mistral-small-4",
+  "name": "Mistral Small 4",
+  "vendor": "Mistral AI",
+  "category": "text",
+  "docs": [
+   "docs.mistral.ai"
+  ],
+  "summary": "Mistral's Apache-2.0 hybrid instruct/reasoning/coding model (Mar 2026).",
+  "format": "System prompt chat format; reasoning mode toggled on request.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "magistral-medium-small-1-2",
+  "name": "Magistral Medium / Small 1.2",
+  "vendor": "Mistral AI",
+  "category": "text",
+  "docs": [
+   "docs.mistral.ai"
+  ],
+  "summary": "Mistral's dedicated reasoning models, being folded into Medium 3.5.",
+  "format": "Mistral's recommended reasoning system prompt with a [THINK] draft before the answer.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "codestral-devstral-2",
+  "name": "Codestral / Devstral 2",
+  "vendor": "Mistral AI",
+  "category": "text",
+  "docs": [
+   "docs.mistral.ai"
+  ],
+  "summary": "Codestral for code completion/FIM; Devstral 2 for agentic coding.",
+  "format": "Codestral takes FIM prompt+suffix; Devstral runs in agent scaffolds with tool schemas.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "kimi-k3",
+  "name": "Kimi K3",
+  "vendor": "Moonshot AI",
+  "category": "text",
+  "docs": [
+   "platform.kimi.ai"
+  ],
+  "summary": "Moonshot's open-weight flagship (Jul 2026), 1M context, multimodal, always-on thinking.",
+  "format": "OpenAI-compatible; clear instructions plus representative examples give the most stable output.",
+  "negative": false,
+  "platforms": [
+   "comfyui-api"
+  ]
+ },
+ {
+  "id": "kimi-k2-6-k2-7-code",
+  "name": "Kimi K2.6 / K2.7 Code",
+  "vendor": "Moonshot AI",
+  "category": "text",
+  "docs": [
+   "platform.kimi.ai"
+  ],
+  "summary": "Previous-generation open agentic-coding models.",
+  "format": "OpenAI-compatible with thinking toggle, built for tool-calling agent loops.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "glm-5-3",
+  "name": "GLM-5.3",
+  "vendor": "Zhipu AI (Z.ai)",
+  "category": "text",
+  "docs": [
+   "docs.z.ai",
+   "bigmodel.cn"
+  ],
+  "summary": "Z.ai's open-source flagship (Aug 2026), coding focused, 1M context.",
+  "format": "OpenAI-compatible chat with a thinking parameter.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "minimax-m3",
+  "name": "MiniMax M3",
+  "vendor": "MiniMax",
+  "category": "text",
+  "docs": [
+   "platform.minimax.io"
+  ],
+  "summary": "MiniMax's open-weight MoE model (Jun 2026), 1M context, image/video input.",
+  "format": "OpenAI- and Anthropic-compatible APIs; interleaved thinking, keep thinking content in history during agent loops.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "command-a",
+  "name": "Command A+",
+  "vendor": "Cohere",
+  "category": "text",
+  "docs": [
+   "docs.cohere.com"
+  ],
+  "summary": "Cohere's MoE flagship for enterprise agents (May 2026) with native citations.",
+  "format": "System preamble for task/style; documents passed as a separate parameter for grounded, cited answers; tool-use schemas.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "amazon-nova-2-lite-pro",
+  "name": "Amazon Nova 2 (Lite / Pro)",
+  "vendor": "Amazon",
+  "category": "text",
+  "docs": [
+   "docs.aws.amazon.com",
+   "aws.amazon.com"
+  ],
+  "summary": "Amazon's multimodal reasoning models on Bedrock, 1M context.",
+  "format": "Bedrock Converse with system prompt; markdown ## sections and explicit output schemas; reasoningConfig effort.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "mai-thinking-1",
+  "name": "MAI-Thinking-1",
+  "vendor": "Microsoft",
+  "category": "text",
+  "docs": [
+   "microsoft.ai",
+   "learn.microsoft.com"
+  ],
+  "summary": "Microsoft's in-house frontier reasoning model (Jun 2026).",
+  "format": "Standard system/user chat in Foundry with built-in reasoning.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "phi-4-family",
+  "name": "Phi-4 family",
+  "vendor": "Microsoft",
+  "category": "text",
+  "docs": [
+   "azure.microsoft.com",
+   "huggingface.co"
+  ],
+  "summary": "Microsoft's small open models including reasoning and reasoning-vision variants.",
+  "format": "<|system|>/<|user|>/<|assistant|> template; reasoning variants emit <think> blocks and expect a short system prompt.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "perplexity-sonar-sonar-pro-reasoning-pro-deep-research",
+  "name": "Perplexity Sonar (Sonar / Pro / Reasoning Pro / Deep Research)",
+  "vendor": "Perplexity",
+  "category": "text",
+  "docs": [
+   "docs.perplexity.ai"
+  ],
+  "summary": "Perplexity's search-grounded answer models with citations.",
+  "format": "Write the prompt like a specific single-topic search query, no few-shot examples; system prompt only for style/tone; control retrieval with search filters, not prompt text.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "doubao-seed-2-1",
+  "name": "Doubao Seed 2.1",
+  "vendor": "ByteDance",
+  "category": "text",
+  "docs": [
+   "volcengine.com",
+   "byteplus.com"
+  ],
+  "summary": "ByteDance's current LLM flagship family (Jun 2026) for agents and coding.",
+  "format": "OpenAI-compatible chat with thinking-mode toggle.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "nvidia-nemotron-3-ultra",
+  "name": "NVIDIA Nemotron 3 Ultra",
+  "vendor": "NVIDIA",
+  "category": "text",
+  "docs": [
+   "research.nvidia.com",
+   "build.nvidia.com"
+  ],
+  "summary": "NVIDIA's open hybrid Mamba-Transformer MoE (Jun 2026), 1M context, for long-running agents.",
+  "format": "Chat template with reasoning on/off set in the system prompt; tool calling.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "ernie-5-1",
+  "name": "ERNIE 5.1",
+  "vendor": "Baidu",
+  "category": "text",
+  "docs": [
+   "ernie.baidu.com",
+   "cloud.baidu.com"
+  ],
+  "summary": "Baidu's sparse MoE model (May 2026).",
+  "format": "OpenAI-style chat with system prompt on Qianfan.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "xiaomi-mimo-v2-6-pro-flash",
+  "name": "Xiaomi MiMo-V2.6 (Pro / Flash)",
+  "vendor": "Xiaomi",
+  "category": "text",
+  "docs": [
+   "mimo.xiaomi.com",
+   "mimo.mi.com"
+  ],
+  "summary": "Xiaomi's open omnimodal MoE (Sep 2026), 1M context.",
+  "format": "OpenAI-compatible chat with thinking mode.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "suno-v6",
+  "name": "Suno v6",
+  "vendor": "Suno",
+  "category": "audio",
+  "docs": [
+   "suno.com",
+   "help.suno.com"
+  ],
+  "summary": "Suno's current music model family (Sep 2026) with text, audio, image and video input and section editing.",
+  "format": "Style prompt (genre, mood, instruments, vocals) plus lyrics with [Verse]/[Chorus]/[Bridge] tags; plain-language edit instructions; 'Exclude styles' acts as a negative prompt.",
+  "negative": true,
+  "platforms": []
+ },
+ {
+  "id": "udio",
+  "name": "Udio",
+  "vendor": "Udio",
+  "category": "audio",
+  "docs": [
+   "udio.com",
+   "help.udio.com"
+  ],
+  "summary": "AI music platform moving to a licensed remix-focused service.",
+  "format": "Descriptive genre/mood/instrument tags plus custom lyrics with section tags; negative tags supported in manual mode.",
+  "negative": true,
+  "platforms": []
+ },
+ {
+  "id": "eleven-music-v2-5",
+  "name": "Eleven Music v2.5",
+  "vendor": "ElevenLabs",
+  "category": "audio",
+  "docs": [
+   "elevenlabs.io"
+  ],
+  "summary": "ElevenLabs' studio-grade song and instrumental model.",
+  "format": "Natural-language prompt (genre, mood, instruments, BPM, key, vocals) or structured composition plan with per-section styles and negative styles.",
+  "negative": true,
+  "platforms": []
+ },
+ {
+  "id": "eleven-text-to-sound-v2-sfx",
+  "name": "Eleven Text to Sound v2 (SFX)",
+  "vendor": "ElevenLabs",
+  "category": "audio",
+  "docs": [
+   "elevenlabs.io"
+  ],
+  "summary": "ElevenLabs' sound-effects generator with duration, looping and prompt-influence controls.",
+  "format": "Short concrete description of source, action, acoustic space and timing; optional duration and prompt_influence.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "lyria-3-5",
+  "name": "Lyria 3.5",
+  "vendor": "Google DeepMind",
+  "category": "audio",
+  "docs": [
+   "deepmind.google",
+   "ai.google.dev",
+   "blog.google"
+  ],
+  "summary": "Google's latest music model with vocals, lyrics, tempo and duration control.",
+  "format": "Descriptive natural-language prompt (genre, mood, instruments, tempo, duration) with optional lyrics and structure.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "gemini-3-8-flash-tts",
+  "name": "Gemini 3.8 Flash TTS",
+  "vendor": "Google",
+  "category": "audio",
+  "docs": [
+   "ai.google.dev"
+  ],
+  "summary": "Google's steerable single- and multi-speaker text-to-speech (Sep 2026).",
+  "format": "Natural-language director's note (style, accent, pace, emotion) then transcript; label speakers and map to voices for multi-speaker.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "gemini-live-native-audio",
+  "name": "Gemini Live (native audio)",
+  "vendor": "Google",
+  "category": "audio",
+  "docs": [
+   "ai.google.dev"
+  ],
+  "summary": "Google's realtime speech-to-speech model for voice agents.",
+  "format": "System instruction setting persona, language, tool rules and voice; short spoken responses; specify interruption behavior.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "openai-gpt-realtime-gpt-live",
+  "name": "OpenAI gpt-realtime / gpt-live",
+  "vendor": "OpenAI",
+  "category": "audio",
+  "docs": [
+   "developers.openai.com",
+   "platform.openai.com"
+  ],
+  "summary": "OpenAI's realtime speech-to-speech voice-agent models.",
+  "format": "Structured voice-agent session instructions (Role, Personality & Tone, Language, Pacing, Tools, Conversation Flow) with short bullet rules and sample phrases.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "openai-gpt-4o-mini-tts",
+  "name": "OpenAI gpt-4o-mini-tts",
+  "vendor": "OpenAI",
+  "category": "audio",
+  "docs": [
+   "developers.openai.com",
+   "platform.openai.com"
+  ],
+  "summary": "OpenAI's steerable text-to-speech model.",
+  "format": "Separate 'instructions' field describing affect, tone, pacing, emotion, pronunciation; input holds the text to speak.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "hume-octave-2-evi",
+  "name": "Hume Octave 2 / EVI",
+  "vendor": "Hume AI",
+  "category": "audio",
+  "docs": [
+   "dev.hume.ai",
+   "hume.ai"
+  ],
+  "summary": "Hume's emotionally aware TTS and speech-to-speech voice models.",
+  "format": "Natural-language acting instructions per utterance; voice prompt for voice design; EVI system prompts written in spoken style.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "minimax-speech-2-8",
+  "name": "MiniMax Speech-2.8",
+  "vendor": "MiniMax",
+  "category": "audio",
+  "docs": [
+   "platform.minimax.io",
+   "minimax.io"
+  ],
+  "summary": "MiniMax's TTS with sound tags, voice cloning and Voice Design.",
+  "format": "Script with inline sound tags like (laughs) (sighs) plus emotion/speed/pitch parameters; voice design from a text description.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "minimax-music-3-0",
+  "name": "MiniMax Music-3.0",
+  "vendor": "MiniMax",
+  "category": "audio",
+  "docs": [
+   "platform.minimax.io",
+   "minimax.io"
+  ],
+  "summary": "MiniMax's full-song generation model with vocals.",
+  "format": "Style/concept prompt for genre, mood and instruments plus lyrics with [Verse]/[Chorus] tags.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "stable-audio-3-0",
+  "name": "Stable Audio 3.0",
+  "vendor": "Stability AI",
+  "category": "audio",
+  "docs": [
+   "stability.ai",
+   "platform.stability.ai"
+  ],
+  "summary": "Stability's licensed-data music and SFX family (May 2026), partly open weights.",
+  "format": "Comma-separated descriptors (genre, instruments, mood, BPM, key) plus duration; negative prompt; audio-to-audio.",
+  "negative": true,
+  "platforms": []
+ },
+ {
+  "id": "voxtral-tts",
+  "name": "Voxtral TTS",
+  "vendor": "Mistral AI",
+  "category": "audio",
+  "docs": [
+   "docs.mistral.ai"
+  ],
+  "summary": "Mistral's multilingual TTS with zero-shot voice cloning.",
+  "format": "Plain text plus a short reference clip of the voice to clone.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "amazon-nova-2-sonic",
+  "name": "Amazon Nova 2 Sonic",
+  "vendor": "Amazon",
+  "category": "audio",
+  "docs": [
+   "docs.aws.amazon.com"
+  ],
+  "summary": "Amazon's realtime speech-to-speech model for voice agents.",
+  "format": "System prompt written for spoken conversation (short turns, no markdown), tool config, voiceId.",
+  "negative": false,
+  "platforms": []
+ },
+ {
+  "id": "grok-voice",
+  "name": "Grok Voice",
+  "vendor": "xAI",
+  "category": "audio",
+  "docs": [
+   "docs.x.ai"
+  ],
+  "summary": "xAI's speech-to-speech voice-agent model.",
+  "format": "Session instructions/system prompt for persona and tools in an OpenAI-Realtime-style config.",
+  "negative": false,
+  "platforms": []
+ }
+]
