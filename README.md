@@ -9,6 +9,32 @@ revised until it passes. It is a Next.js app that runs on your computer and open
 through Claude Code), and the optional docs research uses your own Perplexity account and key; nothing of yours is
 uploaded anywhere else.**
 
+![PromptForge](docs/screenshot.jpg)
+
+<!-- videos:start -->
+## See it in action
+
+<p align="center"><a href="docs/videos/tutorial.mp4"><img src="docs/videos/tutorial.jpg" alt="How it works" width="640"></a><br><b>▶ <a href="docs/videos/tutorial.mp4">How it works</a></b> (0:56, with captions)</p>
+
+**Made with PromptForge, from three requests written for this page (Claude through Claude Code, docs research off)**
+
+<table><tr>
+<td width="33%" align="center"><a href="docs/videos/examples/lighthouse-seedance-2.mp4"><img src="docs/videos/examples/lighthouse-seedance-2.gif" alt="Seedance 2.0 · a lighthouse at dawn"></a><br><a href="docs/videos/examples/lighthouse-seedance-2.mp4">Seedance 2.0 · a lighthouse at dawn</a></td>
+<td width="33%" align="center"><a href="docs/videos/examples/mug-flux-2-pro.mp4"><img src="docs/videos/examples/mug-flux-2-pro.gif" alt="FLUX.2 Pro · a ceramic mug product shot"></a><br><a href="docs/videos/examples/mug-flux-2-pro.mp4">FLUX.2 Pro · a ceramic mug product shot</a></td>
+<td width="33%" align="center"><a href="docs/videos/examples/forest-kling-3.mp4"><img src="docs/videos/examples/forest-kling-3.gif" alt="Kling 3.0 · a fantasy forest animation"></a><br><a href="docs/videos/examples/forest-kling-3.mp4">Kling 3.0 · a fantasy forest animation</a></td>
+</tr><tr>
+<td width="33%" align="center"><a href="docs/videos/examples/model-picker.mp4"><img src="docs/videos/examples/model-picker.gif" alt="302 models · search and filter"></a><br><a href="docs/videos/examples/model-picker.mp4">302 models · search and filter</a></td>
+<td width="33%" align="center"><a href="docs/videos/examples/model-profile.mp4"><img src="docs/videos/examples/model-profile.gif" alt="A model profile · FLUX.2 Pro"></a><br><a href="docs/videos/examples/model-profile.mp4">A model profile · FLUX.2 Pro</a></td>
+<td width="33%" align="center"><a href="docs/videos/examples/library.mp4"><img src="docs/videos/examples/library.gif" alt="The Library"></a><br><a href="docs/videos/examples/library.mp4">The Library</a></td>
+</tr></table>
+
+Click any picture to play the video. The examples and the tutorial are screen recordings of PromptForge itself. The
+three requests ("a cinematic shot of a lighthouse at dawn", "a cozy product shot of a ceramic mug", "a short fantasy
+forest animation") were written for this page, and the prompts were written by Claude through
+[Claude Code](https://code.claude.com/docs/en/setup) from the built-in starter profiles. No photos, footage or other
+people's work are used.
+<!-- videos:end -->
+
 ## Install
 
 You need:
@@ -195,6 +221,9 @@ tests never reach a real service or spend anything.
   through `next/font`.
 - Model, vendor and platform names in the catalog belong to their owners. PromptForge is an independent project, not
   affiliated with Anthropic, Perplexity or any model vendor or platform.
+- Examples, screenshot and tutorial video in `docs/`: screen recordings of PromptForge. The prompts in them were
+  written by Claude, through [Claude Code](https://code.claude.com/docs/en/setup), from three requests written for this
+  README; docs research was off, so they use the built-in starter profiles.
 
 ## Licence
 
